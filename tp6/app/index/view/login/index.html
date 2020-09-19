@@ -1,0 +1,229 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>首页</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--登录成功界面。。-->
+<!--用户列表-->
+<!--&lt;!&ndash;{$user}&ndash;&gt;-->
+<!--{$loginname}-->
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <td>用户名</td>-->
+<!--        <td>年龄</td>-->
+<!--        <td>操作</td>-->
+<!--    </tr>-->
+<!--    {foreach($user as $key =>$u)}-->
+<!--    <tr>-->
+<!--        <td>{$u["user_acc"]}</td>-->
+<!--        <td>{$u["user_age"]}</td>-->
+<!--        <td>-->
+<!--            <a href="updatauser?uno={$u['user_id']}">修改</a>|删除</td>-->
+<!--    </tr>-->
+<!--    {/foreach}-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台管理系统</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="__CSS__/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="__CSS__/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="__CSS__/AdminIndex.css">
+</head>
+
+<body class="sidebar-fixed header-fixed">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a class="navbar-brand" href="#">
+            <img src="__IMG__/logo.png" alt="logo" height="50">
+        </a>
+
+        <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item d-md-down-none">
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-danger">5</span>
+                </a>
+            </li>
+
+            <li class="nav-item d-md-down-none">
+                <a href="#">
+                    <i class="fa fa-envelope-open"></i>
+                    <span class="badge badge-pill badge-danger">5</span>
+                </a>
+            </li> -->
+            <li class="nav-item d-md-down-none">你好</li>
+            <li id="role_name" class="nav-item d-md-down-none"></li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="__IMG__/touxiang.png" class="avatar avatar-sm" alt="logo">
+                    <span id="username" class="small ml-1 d-md-down-none">John Smith</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">账号</div>
+
+
+
+                    <a href="index.php?m=admin&c=Index&a=loginOut" class="dropdown-item">
+                        <i class="fa fa-lock"></i> 退出登录
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav" id="nav">
+
+
+                    <li class="nav-item">
+                        <a href="Application/View/admin/main.html" class="nav-link active" target="content">
+                            <i class="icon icon-speedometer"></i> 首页
+                        </a>
+                    </li>
+
+<!--                    <li class="nav-item nav-dropdown">-->
+<!--                        <a href="#" class="nav-link nav-dropdown-toggle">-->
+<!--                            <i class="icon icon-target"></i> 系统管理 <i class="fa fa-caret-left"></i>-->
+<!--                        </a>-->
+
+<!--                        <ul class="nav-dropdown-items">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="Application/View/admin/admin_role.html" class="nav-link" target="content">-->
+<!--                                    <i class="icon icon-target"></i> 角色管理-->
+<!--                                </a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a href="Application/View/admin/admin_employee.html" class="nav-link" target="content">-->
+<!--                                    <i class="icon icon-target"></i> 员工管理-->
+<!--                                </a>-->
+<!--                            </li>-->
+
+<!--                        </ul>-->
+<!--                    </li>-->
+
+<!--                    <li class="nav-item nav-dropdown">-->
+<!--                        <a href="#" class="nav-link nav-dropdown-toggle">-->
+<!--                            <i class="icon icon-energy"></i> 商品管理 <i class="fa fa-caret-left"></i>-->
+<!--                        </a>-->
+
+<!--                        <ul class="nav-dropdown-items">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="alerts.html" class="nav-link" target="content">-->
+<!--                                    <i class="icon icon-energy"></i> 商品发布-->
+<!--                                </a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a href="buttons.html" class="nav-link">-->
+<!--                                    <i class="icon icon-energy"></i> 商品库-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+
+<!--                    <li class="nav-item nav-dropdown">-->
+<!--                        <a href="#" class="nav-link nav-dropdown-toggle">-->
+<!--                            <i class="icon icon-graph"></i> 订单管理 <i class="fa fa-caret-left"></i>-->
+<!--                        </a>-->
+
+<!--                        <ul class="nav-dropdown-items">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="chartjs.html" class="nav-link">-->
+<!--                                    <i class="icon icon-graph"></i> 未支付订单-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="chartjs.html" class="nav-link">-->
+<!--                                    <i class="icon icon-graph"></i> 已支付订单-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+
+                    <li class="nav-item">
+                        <a href="forms.html" class="nav-link">
+                            <i class="icon icon-puzzle"></i> 用户管理
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tables.html" class="nav-link">
+                            <i class="icon icon-grid"></i> 文档管理
+                        </a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a href="tables.html" class="nav-link">-->
+<!--                            <i class="icon icon-umbrella"></i> 报表统计-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a href="tables.html" class="nav-link">-->
+<!--                            <i class="icon icon-grid"></i> 日志功能-->
+<!--                        </a>-->
+<!--                    </li>-->
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="public-ifame-content">
+<!--                <iframe name="content" src="Index/userlist" frameborder="0" id="mainframe" scrolling="yes" marginheight="0" marginwidth="0" width="100%" style="height: 700px;"></iframe>-->
+                登录成功界面。。
+                用户列表
+                <!--{$user}-->
+                {$loginname}
+                <table border="1">
+                    <tr>
+                        <td>用户名</td>
+                        <td>年龄</td>
+                        <td>操作</td>
+                    </tr>
+                    {foreach($user as $key =>$u)}
+                    <tr>
+                        <td>{$u["user_acc"]}</td>
+                        <td>{$u["user_age"]}</td>
+                        <td>
+                            <a href="updatauser?uno={$u['user_id']}">修改</a>|删除</td>
+                    </tr>
+                    {/foreach}
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__JS__/jquery-2.1.4.js"></script>
+<!--<script src="Public/js/popper.js/popper.min.js"></script>-->
+
+<script src="__JS__/bootstrap.min.js"></script>
+<!--<script src="Public/js/AdminIndex.js"></script>-->
+<!--<script src="Public/js/carbon.js"></script>-->
+<!--<script src="Public/js/demo.js"></script>-->
+
+</body>
+
+</html>
