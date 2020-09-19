@@ -1,2 +1,15 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view>
+  <view class="center">
+    <image src="http://49.234.64.182:86/static/applet/img/3.jpg"></image>
+  </view>
+  <view>
+    <button class="flex-column" type="primary" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="width: 95%;height:36px;font-size: 14px;display: flex;justify-content: center;"> <image class="btnImg" src="http://49.234.64.182:86/static/applet/img/微信.png"></image><text>微信用户一键登录</text> </button>
+    <view class="center" wx:else>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="center topMargin90">
+    <text>输入手机号码登录/注册</text>
+  </view>
+</view>
