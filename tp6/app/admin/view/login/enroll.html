@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+
+    <style>
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        .loginwarrp {
+            width: 400px;
+            font-size: 14px;
+            font-family: 微软雅黑;
+            margin: 250px auto;
+            padding: 30px 50px;
+            background: rgb(255, 255, 255);
+            overflow: hidden;
+        }
+        
+        .loginwarrp .logo {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .loginwarrp .login_form {
+            margin-top: 15px;
+        }
+        
+        .loginwarrp .login_form .login_input {
+            height: 35px;
+            border: none;
+            line-height: 35px;
+            width: 319px;
+            font-size: 14px;
+            outline: none;
+            padding: 2px 8px;
+            border: 1px solid #dedede;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .loginwarrp .login-sub {
+            text-align: center;
+        }
+        
+        .loginwarrp .login-sub input {
+            margin-top: 15px;
+            line-height: 35px;
+            width: 150px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-family: 微软雅黑;
+            background: rgb(69, 181, 73);
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body style="background: #009688;">
+    <div class="page">
+        <div class="loginwarrp">
+            <div class="logo">注册
+                <a href="Login" style="font-size: 12px;float: right;">登录</a>
+            </div>
+            <div class="login_form">
+                <form id="Login" name="Login" method="post" onsubmit="" action="Login/checkenroll">
+                    <span>用户名：</span>
+
+
+                    <input type="text" maxlength="5" id="inputAcc" name="UserName" class="login_input" placeholder="请输入账号（4个数字）">
+                    <div style="padding-left: 60px; color:red;"></div>
+
+
+                    <span>密　码：</span>
+                    <input type="password" id="inputPwd" name="password" class="login_input" placeholder="请输入六位数字密码">
+                    <div style="padding-left: 60px; color:red;"></div>
+                    <!-- <li class="login-item verify">
+                        <span>验证码：</span>
+                        <input type="text" id="code" name="CheckCode" class="login_input verify_input">
+                    </li>
+                    <img id="codeBox" src="Framework/libs/drawrand.php" border="0" class="verifyimg"> -->
+                    <div class="clearfix"></div>
+
+                    <div id="accTip" style="color:red"></div>
+
+                    <li class="login-sub">
+                        <input type="button" id="btn_Login" name="Submit" value="注册" onclick="checkData()">
+
+                    </li>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="__JS__/jquery-2.1.4.js"></script>
+    <script src="__JS__/login.js"></script>
+</body>
+
+</html>
