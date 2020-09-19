@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/18 15:33 newProject QLB">
-      <change beforePath="$PROJECT_DIR$/.idea/dacheproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dacheproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +11,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/tp6-project/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -35,12 +36,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpstudy_pro/WWW/linjietp6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -53,6 +58,8 @@
       <updated>1600413455705</updated>
       <workItem from="1600413457991" duration="3300000" />
       <workItem from="1600418759238" duration="380000" />
+      <workItem from="1600495661031" duration="61000" />
+      <workItem from="1600496302466" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -65,10 +72,32 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
     <option name="LAST_COMMIT_MESSAGE" value="2020/09/18 15:33 newProject QLB" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600496424882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1600496424882" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600497146517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600497146517" />
+    <state x="581" y="132" key="NewPhpClassDialog" timestamp="1600496617979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="581" y="132" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600496617979" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1600495696365">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600495696365" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600497007041">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600497007041" />
   </component>
 </project>
