@@ -106,5 +106,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  phoneLogin:function(){
+    console.log("1")
   }
 })
