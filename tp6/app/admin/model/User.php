@@ -1,8 +1,8 @@
 <?php
-namespace app\index\model;
+namespace app\admin\model;
 use think\model;
 
 class User extends model{
-//    protected $table = "user";//表名
-//    protected $pk = "user_id";//主键
+    protected $table = "DD_Admin";//表名
+    protected $pk = "a_id";//主键
 }

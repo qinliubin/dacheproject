@@ -1,5 +1,5 @@
 <?php
-namespace app\index\controller;
+namespace app\admin\controller;
 //namespace 引入包名
 use app\index\model\User;
 

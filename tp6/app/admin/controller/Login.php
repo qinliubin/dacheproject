@@ -1,9 +1,10 @@
 <?php
 
 
-namespace app\index\controller;
+namespace app\admin\controller;
 
-use app\index\model\User;
+
+use app\admin\model\User;
 use think\facade\Db;
 use think\facade\Request;
 use think\facade\View;
@@ -11,10 +12,27 @@ class Login
 {
     //方法名和文件名一致的花不需要传参
     public function Login(){
-        //通过视图访问HTML文件（视图的渲染）
-//        return View::fetch("login");
-        echo '123';
+        $uname=Request::param('username');
+        $pwd=Request::param('password');
+//        $a=Request::post('');
+//       $data = input("username");
+//        $param = Request::instance()->param();
+//        $data = [
+//            'username'=>$request->param('username'),
+//            'password'=>$request->param('password')
+//        ];
+        //dump($data["username"]);
+        $User =new User();
+        $res=$User->Db()->where([["a_acc","=",$uname],["a_pwd","=",$pwd]])->find();
+        if ($res){
+            return json(array('code'=>'20001','ary'=>$res));
+        }else{
+            return json(array('code'=>'20002'));
+        }
+
+
     }
+
     public function Enroll(){
         //通过视图访问HTML文件（视图的渲染）
         return View::fetch("/enroll");
