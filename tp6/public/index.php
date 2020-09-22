@@ -22,3 +22,5 @@ $response = $http->run();
 $response->send();
 
 $http->end($response);
+
+define("APP_DEBUG", false);

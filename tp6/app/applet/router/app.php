@@ -3,4 +3,4 @@
 use think\facade\Route;
 
 //创建静态路由
-Route::get('index', 'Login/index');
+//Route::get('aliyun', 'aliyun/aliyun');
