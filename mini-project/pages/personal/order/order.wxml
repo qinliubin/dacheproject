@@ -1,0 +1,205 @@
+<!--pages/personal/order/order.wxml-->
+<scroll-view scroll-x="true" bindscroll="scroll" class="scroll-view_H list-liu">
+  <view class="scroll-view-W">
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="swichNav" hover-class="eee">全部</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="swichNav" hover-class="eee">已付款</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==2?'on':''}}" data-current="2" bindtap="swichNav" hover-class="eee">待付款</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==3?'on':''}}" data-current="3" bindtap="swichNav" hover-class="eee">已评价</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==4?'on':''}}" data-current="4" bindtap="swichNav" hover-class="eee">待评价</view>
+  </view>
+</scroll-view>
+  
+<!-- 选项卡内容 -->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="height:{{clientHeight?clientHeight+'px':'auto'}}">  
+    <!-- 全部订单 内容 --> 
+  <swiper-item>   
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <image src="../../../image/wuding.png"></image>
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index" data-index="{{item}}" bindtap="toDetail">
+          <view class="shop">
+            <view class="shop-left">
+              <text>快车</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">{{item.state}}</text>
+            </view>
+          </view>
+          <view class="pic-con">
+            <view class="con">
+              <text class="type1">时间：{{item.time}}</text>
+              <text class="type1">起点：{{item.type1}}</text>
+              <text class="type1">终点：{{item.type2}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 已付款 内容 --> 
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <image src="../../../image/wuding.png"></image>
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <text>快车</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">{{item.state}}</text>
+            </view>
+          </view>
+          <view class="pic-con">
+            <view class="con">
+              <text class="type1">时间：{{item.time}}</text>
+              <text class="type1">起点：{{item.type1}}</text>
+              <text class="type1">终点：{{item.type2}}</text>
+            </view>
+         
+          </view>
+          <!-- <view class="price-right">
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view> -->
+          <!-- <view class="buy-button">
+            <button id="buy-right">付款</button>
+          </view> -->
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 待付款 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <image src="../../../image/wuding.png"></image>
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <text>快车</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">{{item.state}}</text>
+            </view>
+          </view>
+          <view class="pic-con">
+            <view class="con">
+              <text class="type1">时间：{{item.time}}</text>
+              <text class="type1">起点：{{item.type1}}</text>
+              <text class="type1">终点：{{item.type2}}</text>
+            </view>
+          </view>
+          <!-- <view class="price-right">
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view> -->
+          <!-- <view class="buy-button">
+            <button id="buy-right">提醒发货</button>
+          </view> -->
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 已评价 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <image src="../../../image/wuding.png"></image>
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <text>快车</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">{{item.state}}</text>
+            </view>
+          </view>
+          <view class="pic-con">
+            <view class="con">
+              <text class="type1">时间：{{item.time}}</text>
+              <text class="type1">起点：{{item.type1}}</text>
+              <text class="type1">终点：{{item.type2}}</text>
+            </view>
+          </view>
+          <!-- <view class="price-right">
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view> -->
+          <!-- <view class="buy-button">
+            <button id="buy-right">已发货</button>
+          </view> -->
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item> 
+    <!-- 待评价 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <image src="../../../image/wuding.png"></image>
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <text>快车</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">{{item.state}}</text>
+            </view>
+          </view>
+          <view class="pic-con">
+            <view class="con">
+              <text class="type1">时间：{{item.time}}</text>
+              <text class="type1">起点：{{item.type1}}</text>
+              <text class="type1">终点：{{item.type2}}</text>
+            </view>
+          </view>
+          <!-- <view class="price-right">
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view> -->
+          <!-- <view class="buy-button">
+            <button id="buy-right">已完成</button>
+          </view> -->
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item> 
+</swiper>

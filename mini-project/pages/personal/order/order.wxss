@@ -1,0 +1,417 @@
+/* pages/personal/order/order.wxss */
+.swiper-tab {
+  height: 40px;
+  line-height: 40px;
+  background: #66CCFF;
+  color:#fff ;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid #66CCFF;
+  }
+.swiper-tab-list {
+  margin: 0 1px;
+  padding: 0 4px;
+  font-size: 15px;
+} 
+.on {
+  border-bottom:2px solid #fff;
+  color: #f5f5f5;
+}   
+.navTopList {
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #BEBEBE ;
+  margin-top:5px;
+}
+.navTopList .order-info {
+  text-align: center;
+}
+.navTopList .order-info view {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 31rpx;
+}
+.navTopList .order-info text {
+  font-size: 34rpx;
+}
+.navTopList .order-info text.active {
+  color: #ff6662;
+}
+.navTopList .ywc,.navTopList .dfk,.navTopList .yqx {
+  flex: 1;
+}
+  /*订单列表*/
+.orderDetails {
+  background: #fff;
+  border-bottom: 20rpx solid #f5f5f5;
+} 
+.orderListTitle {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #BEBEBE;
+}
+.orderListTitle .userName {
+  padding-right: 50rpx;
+  margin-left:10px;
+} 
+.orderListTitle .orderStatus {
+  float: right;
+  margin-right: 20rpx;
+  color: #2f7b27;
+  font-size: 34rpx;
+} 
+.orderListDetails {
+  display: flex;
+  height: 200rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}  
+.orderListDetails .productImg {
+  flex: 1;
+  height:180rpx;
+  width:120px;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+} 
+.orderListDetails .productImg image {
+  width: 100px;
+  height: 90%;
+}
+   
+.orderListDetails .productInfo {
+  flex: 4;
+  margin: 40rpx 10px 20px 30rpx;
+  font-size:15px;
+}
+.orderListDetails .productInfo .productTitle {
+  font-size:15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom:10px;
+}
+.productCount {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+} 
+.productCount>view {
+  float: right;
+  margin-right: 30rpx;
+}
+page {
+  background: #efefef;
+}
+.scroll-view_H {
+  font-size: 0.8rem;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  background: white;
+}
+.scroll-view-W {
+    margin: 0 10rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.on {
+  border-bottom: 2px solid #c80611;
+  color: #c80611;
+}
+.list-liu .swiper-tab-list {
+  text-align: center;
+  line-height: 85rpx;
+  font-size: 34rpx;
+}
+.kong {
+  width: 100%;
+}
+  
+/*----------------------分割线-------------------  */
+  
+/*购物车 全部订单 我的收藏 浏览记录 样式  */
+  
+/* 列表 */
+.vacancy {
+  height: 100%;
+  font-size: 30rpx;
+  color: gray;
+  text-align: center;
+  margin-top: 45%;
+}
+.vacancy image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: .8rem;
+}
+.list {
+  background: #fff;
+  margin: 20rpx;
+  /* display: flex; */
+  box-sizing: border-box;
+  padding: 10rpx 30rpx 10rpx 30rpx;
+  border-bottom: 1px solid #eee;
+  border-radius: 20rpx;
+} 
+.pic-con {
+  display: flex;
+  align-items: center;
+}
+.carts-radio {
+  flex: 1;
+  line-height: 180rpx;
+  text-align: center;
+}
+/* 选项框 */
+.pic {
+  flex: 3;
+  height: 180rpx;
+}
+.pic image {
+  width: 100%;
+  height: 100%;
+} 
+.con {
+  flex: 6;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+view, text, block {
+  font-family: "Microsoft Yahei";
+}  
+/* 类型描述 */
+.type1 {
+  padding-top: 10rpx;
+  display: block;
+  font-size: 30rpx;
+  color: #323232;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.type2 {
+  display: flex;
+  font-size: 28rpx;
+  color: #666;
+  width: 100%;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+/* 数量 */
+.num {
+  width: 140rpx;
+  height: 40rpx;
+  border: 1px solid #eee;
+  margin-top: 15rpx;
+  background: #fff;
+}
+  
+.num2 {
+  float: left;
+  width: 56rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+}
+  
+.num1 {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 36rpx;
+  padding: 0;
+  color: #4a4949;
+  border-right: 1px solid #eee;
+}
+  
+.num3 {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 36rpx;
+  padding: 0;
+  margin: 0;
+  border-radius: 0px;
+  color: #4a4949;
+  border-left: 1px solid #eee;
+}
+  
+/* 价格 */
+  
+.price {
+  width: 100%;
+  font-size: 30rpx;
+  text-align: right;
+}
+.price-right {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+
+}
+.price1 {
+  color: gray;
+  margin-right: 5px;
+}
+  
+.number {
+  color: gray;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+}
+  
+.buy-button {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buy-button button:not([size='mini']) {
+  width: 180rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+}
+#buy-left, #buy-right {
+  border-radius: 30rpx;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+#buy-left {
+  border: 1px solid gray;
+  color: gray;
+  margin-right: 20rpx;
+}
+#buy-right {
+  border: 1px solid red;
+  color: red;
+}
+  
+/* 删除 */
+  
+.del {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 0;
+  bottom: 20rpx;
+}
+/*----------------------分割线-------------------  */
+/**app.wxss**/ 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+/*----------------------分割线-------------------  */
+/*首页商品类样式  */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-1 {
+  width: 375rpx;
+  /* height: 420rpx; */
+  padding: 20rpx 10rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+}
+.content-1 image {
+  width: 374rpx;
+  height: 252rpx;
+  margin-left: -8rpx;
+}
+.content-1 .price .text-price {
+  color: #b20000;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.content-1 .price .text-yj {
+  color: #656565;
+  font-size: 24rpx;
+}
+.content-1 .price .text-oldprice {
+  text-decoration: line-through;
+  color: #656565;
+  font-size: 24rpx;
+}
+.content-1 .name .text-name {
+  font-size: 28rpx;
+  color: #323232;
+}
+.content-1 .dress {
+  margin-top: 10rpx;
+} 
+.content-1 .dress .dress-1 {
+  float: left;
+  color: #989898;
+  font-size: 24rpx;
+}
+.content-1 .dress .dress-2 {
+  float: right;
+  color: #989898;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+}
+.shop {
+  width: 100%;
+  height: 80rpx;
+  font-size: 35rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.shop-left, shop-right {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.shop-right {
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.shop-right text {
+  font-size: 25rpx;
+  align-self: center;
+  padding-right: 20rpx;
+  border-right: 1px solid #efefef;
+}
+.shop-left image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 0.5rem;
+  align-self: center;
+}
+.shop-right image {
+  width: 30rpx;
+  height: 30rpx;
+  align-self: center;
+  padding-left: 20rpx;
+  border-left: 1px solid #efefef;
+}

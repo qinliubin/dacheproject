@@ -1,0 +1,138 @@
+/* pages/personal/order/details/details.wxss */
+page{
+  background-color: #F6F5FA;
+}
+.textaglin{
+  width: 100%;
+  height: 100vh;
+  padding-left: 40rpx;
+  font-size: 30rpx;
+}
+.origin{
+  padding-bottom: 15rpx;
+  padding-left: 10rpx;
+  padding-top: 40rpx;
+}
+.finish{
+  font-size: 30rpx;
+  font-weight: 550;
+  padding-bottom: 24rpx;
+  padding-left: 10rpx;
+}
+.userinfor{
+  width: 83%;
+  background-color: white;
+  border-radius: 23rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-bottom: 30rpx;
+}
+.userinfors{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between
+}
+.userimg{
+  width: 80rpx;
+  height: 80rpx;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.infor {
+  display: flex;
+  padding-left: 30rpx;
+  flex-direction: column;
+  justify-content:space-between;
+  font-size: 26rpx;
+}
+.select_box{
+  background-color: #fff;
+  width: 88%;
+  position: relative;
+  /* border-radius: 20rpx; */
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+ }
+ .select_box_hou{
+  border-bottom-left-radius: 0rpx;
+  border-bottom-right-radius: 0rpx;
+}
+ .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  
+ }
+ 
+ .select_text{
+  font-size: 30rpx;
+  flex: 1;
+ }
+ .select_img{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  transition:transform 0.3s;
+ }
+ .select_img_rotate{
+  transform:rotate(180deg); 
+ }
+ .option_box{
+  position: absolute;
+  top: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  padding: 0 20rpx;
+  background-color: #fff;
+  transition: height 0.3s;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+ }
+ .option_box_on{
+  height: 448rpx;
+ }
+ .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+ }
+.monery{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-top:19rpx;
+}
+.evalu{
+  
+  width: 83%;
+  background-color: #fff;
+  height: 150rpx;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+.evalu_box{
+  margin-top: 500rpx;
+}
+.star_img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 40rpx;
+}
