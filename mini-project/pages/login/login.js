@@ -274,8 +274,12 @@ Page({
                 duration: 1500,
                 success:()=>{
                   setTimeout(()=> {
+                    wx.setStorage({
+                      data: thin.data.Del,
+                      key: 'userAcc',
+                    })
                     wx.navigateTo({
-                      url: '/pages/index/index',
+                      url: '/pages/personal/personal',
                     })
                   },1500)
                 }
@@ -353,8 +357,12 @@ Page({
               duration: 1500,
               success:()=>{
                 setTimeout(()=> {
+                  wx.setStorage({
+                    data: thin.data.acc,
+                    key: 'userAcc',
+                  })
                   wx.navigateTo({
-                    url: '/pages/index/index',
+                    url: '/pages/personal/personal',
                   })
                 },1500)
               }
