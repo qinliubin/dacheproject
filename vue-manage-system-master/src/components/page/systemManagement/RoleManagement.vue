@@ -30,38 +30,22 @@
                     header-cell-class-name="table-header"
                     @selection-change="handleSelectionChange"
             >
-                <el-table-column type="selection" width="55" align="center"></el-table-column>
-                <el-table-column prop="id" label="ID" width="55" align="center"></el-table-column>
-                <el-table-column prop="name" label="用户名"></el-table-column>
-                <el-table-column label="账户余额">
-                    <template slot-scope="scope">￥{{scope.row.money}}</template>
-                </el-table-column>
-                <el-table-column label="头像(查看大图)" align="center">
-                    <template slot-scope="scope">
-                        <el-image
-                                class="table-td-thumb"
-                                :src="scope.row.thumb"
-                                :preview-src-list="[scope.row.thumb]"
-                        ></el-image>
-                    </template>
-                </el-table-column>
-                <el-table-column prop="address" label="地址"></el-table-column>
-                <el-table-column label="状态" align="center">
-                    <template slot-scope="scope">
-                        <el-tag
-                                :type="scope.row.state==='成功'?'success':(scope.row.state==='失败'?'danger':'')"
-                        >{{scope.row.state}}</el-tag>
-                    </template>
-                </el-table-column>
-
-                <el-table-column prop="date" label="注册时间"></el-table-column>
-                <el-table-column label="操作" width="180" align="center">
+                <el-table-column type="selection" width="60" align="center"></el-table-column>
+                <el-table-column prop="r_id" label="ID" width="60" align="center"></el-table-column>
+                <el-table-column prop="r_name" label="角色名"></el-table-column>
+                <el-table-column prop="r_depict" label="角色描述"></el-table-column>
+                <el-table-column label="操作" width="380" align="center">
                     <template slot-scope="scope">
                         <el-button
                                 type="text"
                                 icon="el-icon-edit"
                                 @click="handleEdit(scope.$index, scope.row)"
                         >编辑</el-button>
+                        <el-button
+                                type="text"
+                                icon="el-icon-edit"
+                                @click="handleuplimit(scope.$index, scope.row)"
+                        >修改权限</el-button>
                         <el-button
                                 type="text"
                                 icon="el-icon-delete"
@@ -86,13 +70,43 @@
         <!-- 编辑弹出框 -->
         <el-dialog title="编辑" :visible.sync="editVisible" width="30%">
             <el-form ref="form" :model="form" label-width="70px">
-                <el-form-item label="用户名">
-                    <el-input v-model="form.name"></el-input>
+                <el-form-item label="角色名">
+                    <el-input v-model="form.r_name"></el-input>
                 </el-form-item>
-                <el-form-item label="地址">
-                    <el-input v-model="form.address"></el-input>
+                <el-form-item label="角色描述">
+                    <el-input v-model="form.r_depict"></el-input>
                 </el-form-item>
             </el-form>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="editVisible = false">取 消</el-button>
+                <el-button type="primary" @click="saveEdit">确 定</el-button>
+            </span>
+        </el-dialog>
+        <!-- 修改权限弹出框 -->
+        <el-dialog title="修改权限" :visible.sync="uplimitVisible" width="50%">
+            <div class="drag-box">
+                <div class="drag-box-item">
+                    <div class="item-title">所有权限</div>
+                    <draggable v-model="alllimit" @remove="removeHandle" :options="dragOptions">
+                        <transition-group tag="div" id="todo" class="item-ul">
+                            <div v-for="item in alllimit" class="drag-list" :key="item.id">
+                                {{item.content}}
+                            </div>
+                        </transition-group>
+                    </draggable>
+                </div>
+                <div class="drag-box-item">
+                    <div class="item-title">拥有权限</div>
+                    <draggable v-model="nowlimit" @remove="removeHandle" :options="dragOptions">
+                        <transition-group tag="div" id="doing" class="item-ul">
+                            <div v-for="item in nowlimit" class="drag-list" :key="item.id">
+                                {{item.content}}
+                            </div>
+                        </transition-group>
+                    </draggable>
+                </div>
+
+            </div>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="editVisible = false">取 消</el-button>
                 <el-button type="primary" @click="saveEdit">确 定</el-button>
@@ -102,7 +116,7 @@
 </template>
 
 <script>
-    import { fetchData } from '../../../api/index';
+    import draggable from 'vuedraggable'
     export default {
         name: 'basetable',
         data() {
@@ -117,23 +131,70 @@
                 multipleSelection: [],
                 delList: [],
                 editVisible: false,
+                uplimitVisible:false,
                 pageTotal: 0,
                 form: {},
                 idx: -1,
-                id: -1
+                id: -1,
+                dragOptions:{
+                    animation: 120,
+                    scroll: true,
+                    group: 'sortlist',
+                    ghostClass: 'ghost-style'
+                },
+
+                alllimit: [
+                    {
+                        id: 1,
+                        content: '开发图表组件'
+                    },
+                    {
+                        id: 2,
+                        content: '开发拖拽组件'
+                    },
+                    {
+                        id: 3,
+                        content: '开发权限测试组件'
+                    }
+                ],
+                nowlimit: [
+                    {
+                        id: 1,
+                        content: '开发登录注册页面'
+                    },
+                    {
+                        id: 2,
+                        content: '开发头部组件'
+                    },
+                    {
+                        id: 3,
+                        content: '开发表格相关组件'
+                    },
+                    {
+                        id: 4,
+                        content: '开发表单相关组件'
+                    }
+                ],
+
             };
         },
         created() {
             this.getData();
         },
+        components:{
+            draggable
+        },
         methods: {
             // 获取 easy-mock 的模拟数据
             getData() {
-                fetchData(this.query).then(res => {
-                    console.log(res);
-                    this.tableData = res.list;
-                    this.pageTotal = res.pageTotal || 50;
-                });
+                console.log("111");
+                this.$axios.get('admin/allRole').then(
+                    response =>{
+                        console.log(this.info = response.data)
+                       this.tableData=response.data.data
+                        this.pageTotal=response.data.count
+                    }
+                )
             },
             // 触发搜索按钮
             handleSearch() {
@@ -172,16 +233,37 @@
                 this.form = row;
                 this.editVisible = true;
             },
+            // 修改权限操作
+            handleuplimit(index, row) {
+                this.idx = index;
+                this.form = row;
+                this.uplimitVisible = true;
+            },
             // 保存编辑
             saveEdit() {
                 this.editVisible = false;
                 this.$message.success(`修改第 ${this.idx + 1} 行成功`);
                 this.$set(this.tableData, this.idx, this.form);
+                console.log(this.idx,this.form);
+                this.$axios.get('admin/updataRole', {
+                   data:this.form
+                })
+                    .then(function (response) {
+                        console.log(response.data);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             },
             // 分页导航
             handlePageChange(val) {
                 this.$set(this.query, 'pageIndex', val);
                 this.getData();
+            },
+            // 拖拽移动
+            removeHandle(event){
+                console.log(event);
+                this.$message.success(`从 ${event.from.id} 移动到 ${event.to.id} `);
             }
         }
     };
@@ -215,5 +297,48 @@
         margin: auto;
         width: 40px;
         height: 40px;
+    }
+    /*拖拽的样式*/
+    .drag-box{
+        display: flex;
+        user-select: none;
+    }
+    .drag-box-item {
+        flex: 1;
+        max-width: 330px;
+        min-width: 300px;
+        background-color: #eff1f5;
+        margin-right: 16px;
+        border-radius: 6px;
+        border: 1px #e1e4e8 solid;
+    }
+    .item-title{
+        padding: 8px 8px 8px 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #24292e;
+        font-weight: 600;
+    }
+    .item-ul{
+        padding: 0 8px 8px;
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .item-ul::-webkit-scrollbar{
+        width: 0;
+    }
+    .drag-list {
+        border: 1px #e1e4e8 solid;
+        padding: 10px;
+        margin: 5px 0 10px;
+        list-style: none;
+        background-color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        -webkit-transition: border .3s ease-in;
+        transition: border .3s ease-in;
+    }
+    .drag-list:hover {
+        border: 1px solid #20a0ff;
     }
 </style>

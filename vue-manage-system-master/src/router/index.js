@@ -21,8 +21,23 @@ export default new Router({
                 },
                 {
                     path: '/role',
-                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/systemManagement/role.vue'),
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/systemManagement/RoleManagement.vue'),
                     meta: { title: '角色管理' }
+                },
+                {
+                    path: '/employee',
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/systemManagement/Employee.vue'),
+                    meta: { title: '员工管理' }
+                },
+                {
+                    path: '/passenger',
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/userManagement/PassengerManagement.vue'),
+                    meta: { title: '乘客管理' }
+                },
+                {
+                    path: '/driver',
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/userManagement/DriverManagement.vue'),
+                    meta: { title: '司机管理' }
                 },
                 {
                     path: '/icon',

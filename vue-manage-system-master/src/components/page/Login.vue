@@ -21,50 +21,77 @@
                 <div class="login-btn">
                     <el-button type="primary" @click="submitForm()">登录</el-button>
                 </div>
-                <p class="login-tips">Tips : 用户名和密码随便填。</p>
             </el-form>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    data: function() {
-        return {
-            param: {
-                username: 'admin',
-                password: '123123',
-            },
-            rules: {
-                username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
-                password: [{ required: true, message: '请输入密码', trigger: 'blur' }],
-            },
-        };
-    },
-    methods: {
-        submitForm() {
-            this.$refs.login.validate(valid => {
-                if (valid) {
-                    console.log(111);
-                    this.$axios.get('admin/login').then(
-                        response =>{
-                            console.log(this.info = response.data)
-                            // this.tableData=response.data.data
-                            // this.total=response.data.count
-                        }
-                    )
-                    this.$message.success('登录成功');
-                    localStorage.setItem('ms_username', this.param.username);
-                    this.$router.push('/');
+    import { validUsername } from '@/utils/validate'
+    import {validPassword} from '@/utils/validate'
+    export default {
+        data() {
+            const validateUsername = (rule, value, callback) => {
+                if (!validUsername(value)) {
+                    callback(new Error('请按格式输入账号'))
                 } else {
-                    this.$message.error('请输入账号和密码');
-                    console.log('error submit!!');
-                    return false;
+                    callback()
                 }
-            });
+            }
+            const validatePassword = (rule, value, callback) => {
+                if (!validPassword(value)) {
+                    callback(new Error('输入至少四位数的密码'))
+                } else {
+                    callback()
+                }
+            }
+            return {
+                param: {
+                    username: '',
+                    password: ''
+                },
+                rules: {
+                    username: [{ required: true, trigger: 'blur', validator: validateUsername }],
+                    password: [{ required: true, trigger: 'blur', validator: validatePassword }]
+                },
+                tableData:[]
+            }
         },
-    },
-};
+        methods: {
+            submitForm() {
+                this.$refs.login.validate(valid => {
+                    if (valid) {
+                        // console.log(this.param.username);
+                        // console.log(this.param.password);
+                        this.$axios.post('admin/login/login',
+                           {
+                                username:this.param.username,
+                                password:this.param.password
+                             }
+                        ).then(
+                            response =>{
+                                // console.log(response.data)
+
+                                // this.total=response.data.count
+                                console.log(response.data.code);
+                                if (response.data.code=='20001'){
+                                    this.$message.success('登录成功');
+                                    localStorage.setItem('ms_username', this.param.username);
+                                    this.$router.push('/');
+                                }else{
+                                    this.$message.error('登录失败');
+                                }
+                            }
+                        )
+                    } else {
+                        this.$message.error('请输入账号和密码');
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
+        },
+    };
 </script>
 
 <style scoped>
@@ -80,7 +107,7 @@ export default {
     line-height: 50px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #c9c4c4;
     border-bottom: 1px solid #ddd;
 }
 .ms-login {

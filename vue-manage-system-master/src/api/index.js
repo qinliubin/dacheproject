@@ -7,3 +7,10 @@ export const fetchData = query => {
         params: query
     });
 };
+export const fetchDatatest = query => {
+    return request({
+        url: 'admin/allAdmin',
+        method: 'get',
+        params: query
+    });
+};

@@ -75,7 +75,7 @@ alert('1');
                             title: '角色管理'
                         },
                         {
-                            index: '/table',
+                            index: '/employee',
                             title: '员工管理'
                         }
                     ]
@@ -86,11 +86,11 @@ alert('1');
                     title: '用户管理',
                     subs: [
                         {
-                            index: '/table',
+                            index: '/passenger',
                             title: '乘客管理'
                         },
                         {
-                            index: '/table',
+                            index: '/driver',
                             title: '司机管理'
                         }
                     ]
@@ -126,7 +126,7 @@ alert('1');
                 },
                 {
                     icon: 'el-icon-lx-emoji',
-                    index: 'icon',
+                    index: '4',
                     title: '滴滴城市管理',
                     subs: [
                         {
@@ -141,7 +141,7 @@ alert('1');
                 },
                 {
                     icon: 'el-icon-pie-chart',
-                    index: 'charts',
+                    index: '/table',
                     title: '订单管理'
                 },
                 {
