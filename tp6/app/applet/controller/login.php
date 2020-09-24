@@ -6,7 +6,6 @@ namespace app\applet\controller;
 use app\applet\model\User;
 
 
-
 class Login
 {
     public function login(User $user){
@@ -70,5 +69,8 @@ class Login
             }
 
         }
+    }
+    public function userinfor(){
+        echo '123';
     }
 }

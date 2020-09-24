@@ -30,5 +30,5 @@ return [
     // 显示错误信息
     'show_error_msg'   => true,
     //多应用模式
-    'auto_multi_app'=>true,//为true，并不能代表一定是启用多模式，只有再原来默认APP删除情况下才有效
+    'auto_multi_app' => true,//为true，并不能代表一定是启用多模式，只有再原来默认APP删除情况下才有效
 ];

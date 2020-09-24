@@ -4,7 +4,7 @@
         <view class='info'>
                <input  class= 'info-input1' bindinput="handleInputPhone" placeholder="请输入你的手机号" />
          </view>
-          <button class='button' bindtap='doGetCode' disabled='{{disabled}}' style="background-color:{{color}}" style=" width: 200rpx;height: 70rpx;line-height: 70rpx;font-size: 28rpx;background: #33FF99;float: left; margin-left: 10rpx;margin-top: 15rpx;color: #FFFFFF;padding: 0;">{{text}}</button>
+          <button class='button' bindtap='doGetCode' disabled='{{disabled}}' style=" width: 200rpx;background-color:{{color}};height: 70rpx;line-height: 70rpx;font-size: 28rpx ;float: left; margin-left: 10rpx;margin-top: 15rpx;color: #FFFFFF;padding: 0;">{{text}}</button>
  </view>
  <view class='row'>
         <view class='info'>
@@ -25,8 +25,11 @@
  
  </view>
  <button class='submit' bindtap='submit'>提交</button>
+ <view class="onenter">
+       <text bindtap="onlogin">已有账号！请戳这登录</text>
+ </view>
  </view>
  <view class = 'success' wx:if="{{success}}">
  <view class='cheer'><icon type="success" size="24"/> 恭喜您注册成功!</view>
- <button type = "default" class = 'return' bindtap='return_home'>返回首页</button>
+ <button type = "default" class = 'return' bindtap='return_home'>欢迎使用</button>
  </view>
