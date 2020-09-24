@@ -2,90 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/18 15:33 newProject QLB">
-      <change afterPath="$PROJECT_DIR$/tp6-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/app/admin/controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/app/admin/router/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/app/middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/filesystem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/trace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/extend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/public/static/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/route/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/think" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6-project/view/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dacheproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dacheproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6-project" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/tp6-project/composer.json</pharConfigPath>
+    <execution />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6-project/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6-project/route/app.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tp6-project/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/tp6-project/.example.env" />
-        <option value="$PROJECT_DIR$/tp6-project/config/app.php" />
-      </list>
-    </option>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/league/flysystem-cached-adapter" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/composer" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/framework" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-orm" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-view" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-trace" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-template" />
+      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-multi-app" />
+    </include_path>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -98,48 +60,40 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
-  </component>
+  <component name="ProjectId" id="1hg1raJ7TSatIyLKobCVLqT46wn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="E:/html   css学习内容/三阶段/7.30响应布局" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-project/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -152,6 +106,27 @@
       <option name="presentableId" value="Default" />
       <updated>1600413455705</updated>
       <workItem from="1600413457991" duration="3300000" />
+      <workItem from="1600418122156" duration="3463000" />
+      <workItem from="1600446952005" duration="726000" />
+      <workItem from="1600479124036" duration="25631000" />
+      <workItem from="1600514038657" duration="18406000" />
+      <workItem from="1600568976809" duration="23203000" />
+      <workItem from="1600656033463" duration="15689000" />
+      <workItem from="1600679118831" duration="1213000" />
+      <workItem from="1600697455953" duration="6608000" />
+      <workItem from="1600738457643" duration="815000" />
+      <workItem from="1600741116306" duration="772000" />
+      <workItem from="1600742650392" duration="5912000" />
+      <workItem from="1600753946612" duration="13972000" />
+      <workItem from="1600768145339" duration="1343000" />
+      <workItem from="1600769554338" duration="664000" />
+      <workItem from="1600782922081" duration="3188000" />
+      <workItem from="1600822610952" duration="6141000" />
+      <workItem from="1600840062013" duration="12684000" />
+      <workItem from="1600861004947" duration="6241000" />
+      <workItem from="1600877037814" duration="2108000" />
+      <workItem from="1600910935853" duration="8785000" />
+      <workItem from="1600927045749" duration="3160000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -160,61 +135,108 @@
       <option name="project" value="LOCAL" />
       <updated>1600414466167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020/9/24 15:33 首页布局+登录注册 陈于柏">
+      <created>1600928375353</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600928375353</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3300000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/09/18 15:33 newProject QLB" />
+    <MESSAGE value="2020/9/24 15:33 首页布局+登录注册 陈于柏" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/9/24 15:33 首页布局+登录注册 陈于柏" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tp6-project/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp6-project/route/app.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp6-project/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="309" y="41" key="#Inspections" timestamp="1600765690574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="309" y="41" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1600765690574" />
+    <state x="565" y="225" key="#Notifications" timestamp="1600929371469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="565" y="225" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1600929371469" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600849153993">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600849153993" />
+    <state x="423" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600669061829">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="423" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600669061829" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600516717883">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600516717883" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600827945436">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600827945436" />
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1600928372896">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600928372896" />
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1600930228885">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1600930228885" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1600928995384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600928995384" />
+    <state width="1322" height="104" key="GridCell.Tab.0.bottom" timestamp="1600920063203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="104" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
+    <state width="1322" height="104" key="GridCell.Tab.0.center" timestamp="1600920063203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="104" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
+    <state width="1322" height="104" key="GridCell.Tab.0.left" timestamp="1600920063203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="104" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
+    <state width="1322" height="104" key="GridCell.Tab.0.right" timestamp="1600920063203">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="104" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
+    <state x="364" y="83" key="NewPhpClassDialog" timestamp="1600764940866">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="364" y="83" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1600764940866" />
+    <state x="499" y="286" key="NewPhpFileDialog" timestamp="1600762471827">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600762471827" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1600849287932">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600849287932" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600928774834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600928774834" />
+    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600927114002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600927114002" />
+    <state x="381" y="150" key="git4idea.merge.GitPullDialog" timestamp="1600929420760">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="381" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600929420760" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1600516416264">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600516416264" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600915919465">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600915919465" />
   </component>
 </project>
