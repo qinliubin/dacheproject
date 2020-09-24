@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/register/register",
+    "pages/login/login",
+    "pages/information/information",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "番茄叫车",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

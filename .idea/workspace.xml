@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/18 15:33 newProject QLB">
-      <change beforePath="$PROJECT_DIR$/.idea/dacheproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dacheproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,40 +15,8 @@
     <pharConfigPath>$PROJECT_DIR$/tp6-project/composer.json</pharConfigPath>
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="Vue Single File Component" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration">
-    <include_path>
-      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/cache" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/league/mime-type-detection" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/league/flysystem-cached-adapter" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/composer" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/framework" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-orm" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-view" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-trace" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-helper" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-template" />
-      <path value="$PROJECT_DIR$/tp6-project/vendor/topthink/think-multi-app" />
-    </include_path>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -60,41 +29,23 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1hg1raJ7TSatIyLKobCVLqT46wn" />
+  <component name="ProjectId" id="1hg39TK3sweFDwV6kroYkMZJGL9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="E:/html   css学习内容/三阶段/7.30响应布局" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpstudy_pro/WWW/linjietp6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/vue-project/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -106,27 +57,9 @@
       <option name="presentableId" value="Default" />
       <updated>1600413455705</updated>
       <workItem from="1600413457991" duration="3300000" />
-      <workItem from="1600418122156" duration="3463000" />
-      <workItem from="1600446952005" duration="726000" />
-      <workItem from="1600479124036" duration="25631000" />
-      <workItem from="1600514038657" duration="18406000" />
-      <workItem from="1600568976809" duration="23203000" />
-      <workItem from="1600656033463" duration="15689000" />
-      <workItem from="1600679118831" duration="1213000" />
-      <workItem from="1600697455953" duration="6608000" />
-      <workItem from="1600738457643" duration="815000" />
-      <workItem from="1600741116306" duration="772000" />
-      <workItem from="1600742650392" duration="5912000" />
-      <workItem from="1600753946612" duration="13972000" />
-      <workItem from="1600768145339" duration="1343000" />
-      <workItem from="1600769554338" duration="664000" />
-      <workItem from="1600782922081" duration="3188000" />
-      <workItem from="1600822610952" duration="6141000" />
-      <workItem from="1600840062013" duration="12684000" />
-      <workItem from="1600861004947" duration="6241000" />
-      <workItem from="1600877037814" duration="2108000" />
-      <workItem from="1600910935853" duration="8785000" />
-      <workItem from="1600927045749" duration="3160000" />
+      <workItem from="1600418759238" duration="380000" />
+      <workItem from="1600495661031" duration="61000" />
+      <workItem from="1600496302466" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -135,108 +68,36 @@
       <option name="project" value="LOCAL" />
       <updated>1600414466167</updated>
     </task>
-    <task id="LOCAL-00002" summary="2020/9/24 15:33 首页布局+登录注册 陈于柏">
-      <created>1600928375353</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1600928375353</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
-    <MESSAGE value="2020/9/24 15:33 首页布局+登录注册 陈于柏" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/9/24 15:33 首页布局+登录注册 陈于柏" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/09/18 15:33 newProject QLB" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="309" y="41" key="#Inspections" timestamp="1600765690574">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600496424882">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="309" y="41" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1600765690574" />
-    <state x="565" y="225" key="#Notifications" timestamp="1600929371469">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1600496424882" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600497146517">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="565" y="225" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1600929371469" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600849153993">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600497146517" />
+    <state x="581" y="132" key="NewPhpClassDialog" timestamp="1600496617979">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600849153993" />
-    <state x="423" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600669061829">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="581" y="132" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600496617979" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1600495696365">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="423" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600669061829" />
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600516717883">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600495696365" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600497007041">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600516717883" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600827945436">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600827945436" />
-    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1600928372896">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600928372896" />
-    <state x="129" y="54" key="DiffContextDialog" timestamp="1600930228885">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1600930228885" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1600928995384">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600928995384" />
-    <state width="1322" height="104" key="GridCell.Tab.0.bottom" timestamp="1600920063203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="104" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
-    <state width="1322" height="104" key="GridCell.Tab.0.center" timestamp="1600920063203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="104" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
-    <state width="1322" height="104" key="GridCell.Tab.0.left" timestamp="1600920063203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="104" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
-    <state width="1322" height="104" key="GridCell.Tab.0.right" timestamp="1600920063203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="104" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600920063203" />
-    <state x="364" y="83" key="NewPhpClassDialog" timestamp="1600764940866">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="364" y="83" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1600764940866" />
-    <state x="499" y="286" key="NewPhpFileDialog" timestamp="1600762471827">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="499" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600762471827" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1600849287932">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600849287932" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600928774834">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600928774834" />
-    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600927114002">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600927114002" />
-    <state x="381" y="150" key="git4idea.merge.GitPullDialog" timestamp="1600929420760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="381" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600929420760" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1600516416264">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600516416264" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600915919465">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600915919465" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600497007041" />
   </component>
 </project>

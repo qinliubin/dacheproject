@@ -1,7 +1,14 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/rider/rider",
+    "pages/personal/personal",
+    "pages/personal/userinfor/userinfor",
+    "pages/personal/order/order",
+    "pages/personal/order/details/details"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

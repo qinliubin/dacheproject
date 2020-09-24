@@ -1,0 +1,61 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class="center">
+    <image src="http://49.234.64.182:86/static/applet/img/3.jpg"></image>
+  </view>
+  <view>
+  <button class="flex-column"
+  type="primary" 
+  open-type="getUserInfo" 
+  bindgetuserinfo="getUserInfo" 
+  style="width: 95%;height:36px;font-size: 14px;display: flex;justify-content: center;" 
+  bindtap="onlogin"
+  >微信用户一键登录/注册</button>
+  </view>
+  <view class="modal-mask" hidden="{{wxloginBox}}">
+    <view class="modal-login">
+      <view class="model-top flex-column">
+        <image src="http://49.234.64.182:86/static/applet/img/logo.png" class="modal-logo"></image>
+        <text class="model-text">滴滴出行</text>
+        <text class="model-text">一键登录</text>
+      </view>
+      <view class="model-phoneNum">
+        你的手机号码
+      </view>
+      <view class="model-phone">
+        <input id="phone" placeholder="请输入手机号" bindinput='inputphone' />
+        <button id="gainPhone" type="primary"  size="mini" bindtap="oncode" disabled="{{disabled}}">{{codename}}</button>
+      </view>
+      <view class="model-code">
+        <input id="code" placeholder="请输入验证码" bindinput='inputcode'/>
+      </view>
+      <view class="center">
+        <text bindtap="onacc">手机号登录/注册</text>
+      </view>
+      <view class="center CheckBox">
+        <button id="affirm" class="model-but" type="primary"  size="mini" bindtap="affirm">确认</button>
+        <button id="cancel" class="model-but" size="mini" bindtap="oncancel">取消</button>
+      </view>
+    </view>
+  </view>
+  <view class="modal-mask" hidden="{{accloginBox}}">
+    <view class="modal-login">
+      <view class="model-top flex-column">
+        <image src="http://49.234.64.182:86/static/applet/img/logo.png" class="modal-logo"></image>
+        <text class="model-text">滴滴出行</text>
+        <text class="model-text">申请使用</text>
+      </view>
+      <view class="model-loginbox">
+        <view class="model-height">手机号：<input type="text" bindinput='inputacc' placeholder="请输入手机号"/></view>
+        <view class="model-height">密码：<input type="password" bindinput='inputpwd' placeholder="请输入密码"/></view>
+        <view class="model-height">确认密码：<input type="password" bindinput='inputrpwd' placeholder="再次确认密码"/></view>
+      </view>
+
+
+      <view class="center CheckBox">
+        <button id="accaffirm" class="model-but" type="primary"  size="mini" bindtap="accaffirm">登录/注册</button>
+        <button id="acccancel" class="model-but" size="mini" bindtap="onacccancel">取消</button>
+      </view>
+    </view>
+  </view>
+</view>
