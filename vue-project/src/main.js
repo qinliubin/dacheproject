@@ -6,6 +6,8 @@ import router from './router'
 // 引入elementUI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import '../static/css/homeindex.css'
+import '../static/css/bootstrap.min.css'
 // 引入axios，进行跨域交互
 import axios from 'axios'
 // 将axios对象设置为全局
@@ -14,7 +16,6 @@ Vue.prototype.$axios = axios
 axios.defaults.baseURL = '/api'
 Vue.use(ElementUI)
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
