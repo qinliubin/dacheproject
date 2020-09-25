@@ -1,0 +1,27 @@
+<!--pages/rider/rider.wxml-->
+<view class="riders">
+  <view class="top">
+    <view style="font-size:46rpx;font-weight: 800;">
+     <text>欢迎使用代叫服务</text>
+    </view>
+    <view style="font-size:24rpx;padding-top:20rpx;">
+      <text decode="{{true}}">&nbsp;乘车人无需付费&nbsp;&nbsp;&nbsp;乘车人可实时查看行程信息 </text>
+    </view>
+  </view>
+  <view class="rideradd">
+    <input class="number" placeholder="输入乘车人电话"/>
+    <input class="name" placeholder="输入乘车人电话"/>
+  </view>
+  <view style="width:100%;margin-bottom: 30rpx;">
+    <button class="confirm" style="width:100%;">确认</button>
+  </view>
+  <view class="explain">
+    <view class="explain-top"><text>代叫服务说明</text></view>
+    <view class="explain-cen"><text>未成年人乘车需由监护人陪同</text></view>
+    <view class="explain-cen"><text>乘车人行程中违反平台规则，代叫车人需承担连带责任</text></view>
+  </view>
+  <view class="Imgbox">
+    <view class="kong"></view>
+    <image class="btnImg" src="http://49.234.64.182:86/static/applet/img/cheng.png"></image>
+  </view>
+</view>

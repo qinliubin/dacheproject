@@ -1,0 +1,47 @@
+<view>
+  <view class="userinfo">
+    <view class="account-bg"></view> 
+    <image class="userinfo-avatar" src="{{touuurl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{username}}</text>
+    <view class="account-bg"></view> 
+ </view>
+  <view class="separate"></view>
+  <view class="order" bindtap="userinfor">
+    <text class="myorder-text">个人信息</text>
+    <text class="myorderlook-text">查看全部信息</text>
+    <image class="next-image" src="http://49.234.64.182:86/static/applet/img/jiantou.png"></image>
+  </view>
+  <view class="separate"></view>
+  <view class="order" bindtap="bindorder">
+    <text class="myorder-text">我的订单</text>
+    <text class="myorderlook-text">查看全部订单</text>
+    <image class="next-image" src="http://49.234.64.182:86/static/applet/img/jiantou.png"></image>
+  </view>
+  <!-- <view class="navs">
+    <view class="nav-item" bindtap="noPay">
+      <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/yifu.png"></image>
+      <view>已付款</view>
+    </view>
+    <view class="nav-item" bindtap="noSend">
+      <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/daifu.png"></image>
+      <view>待付款</view>
+    </view>
+    <view class="nav-item" bindtap="sended">
+      <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/yiping.png"></image>
+      <view>已评价</view>
+    </view>
+    <view class="nav-item" bindtap="completed">
+      <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/daiping.png"></image>
+      <view>待评价</view>
+    </view>
+  </view> -->
+  <view class="separate"></view>
+  <view class="order" bindtap="bindorder">
+    <text class="myorder-text">车主招募</text>
+    <text class="myorderlook-text">查看详情信息</text>
+    <image class="next-image" src="http://49.234.64.182:86/static/applet/img/jiantou.png"></image>
+  </view>
+  
+</view> 
+
+
