@@ -4,6 +4,9 @@ Page({
     userInfo: {},
     motto: 'Hello World',
     hasUserInfo: false,
+    username:'',
+    touuurl:'',
+    show:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     // orderItems
     orderItems: [
@@ -35,8 +38,32 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
-    var that = this;
-  
+    let that = this;
+    var value=wx.getStorageSync('userAcc');
+    wx.request({
+      url: 'http://11.com/index.php/applet/Personal/userinfor',
+      data:{
+        u_acc:value,
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        // console.log(res.data);
+        console.log(res.data.data);
+        // console.log(res.data.data.u_name);
+        if(res.data.code==2002){
+          wx.setStorage({
+            data: res.data.data,
+            key: 'user',
+          });
+          that.setData({
+            touuurl:res.data.data.u_img,
+            username:res.data.data.u_name,
+          });
+        }
+      }
+    })
   },
   userinfor:function(){
     wx.navigateTo({
@@ -63,11 +90,14 @@ Page({
   sended: function () {
     app.globalData.currentLocation = 3,
       wx.navigateTo({
-        url: './order/order' })
+        url: './order/order' 
+      })
   },
   completed: function () {
     app.globalData.currentLocation = 4,
-      wx.navigateTo({ url: './order/order' })
+      wx.navigateTo({ 
+        url: './order/order' 
+      })
   },
 
 })

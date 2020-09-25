@@ -2,61 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/18 15:33 newProject QLB">
-      <change afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/FALogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Activity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Advertising.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Billing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Cartype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Chat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Evaluate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/FAUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Vehicle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_18_0018_16_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_18_0018_16_51__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/information/information.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/login/login.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/register/register.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram-driver/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/app/applet/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/app/applet/controller/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/app/applet/router/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/app/applet/router/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/config/captcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/config/captcha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/view/runtime/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/view/runtime/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +57,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpstudy_pro/WWW/linjietp6" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -113,6 +84,7 @@
       <workItem from="1600495661031" duration="61000" />
       <workItem from="1600496302466" duration="895000" />
       <workItem from="1600953928786" duration="346000" />
+      <workItem from="1601005234904" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -125,7 +97,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />

@@ -38,7 +38,7 @@ Page({
     two_2: 5,
     setInter:'',
     num:1,
-    datauser:[]
+    datauser:''
   },
   startSetInter: function(){
     var that = this;
@@ -75,7 +75,7 @@ Page({
   onLoad: function (options) {
   //  console.log(options);
    var value=wx.getStorageSync('key');
-  //  console.log(value);
+   console.log(value);
    this.setData({
     datauser:value
    })

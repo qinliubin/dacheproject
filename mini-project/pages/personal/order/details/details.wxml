@@ -1,10 +1,10 @@
 <!--pages/personal/order/details/details.wxml-->
 <view class="textaglin" >
   <view class="origin">
-    <text>起点：{{datauser.type1}}</text>
+    <text>起点：{{datauser.o_initiaPosition}}</text>
   </view>
   <view style="padding-bottom: 20rpx;padding-left: 10rpx;">
-     <text>终点：{{datauser.type2}}</text> 
+     <text>终点：{{datauser.o_destination}}</text> 
   </view>
   <view class="finish">
     <text>支付完成，单单享低价</text>
@@ -12,17 +12,19 @@
   <view class="userinfor">
     <view class="userinfors">
       <view class="userimg">
-        <image src="http://49.234.64.182:86/static/applet/img/u776.png"></image>
+        <image src="{{datauser.d_img}}"></image>
+        <text style="font-size:24rpx;">{{datauser.d_name}}师傅</text>
       </view>
+      
       <view class="infor">
-        <view>闽D3JH93</view>
-        <view>白色·丰田卡罗拉双擎</view>
+        <view>{{datauser.rm_plateNumber}}</view>
+        <view>{{datauser.rm_colour}}{{datauser.rm_type}}</view>
       </view>
     </view>
   </view>
   <view class='select_box {{showder&&"select_box_hou"}}'>
     <view class='select' catchtap='selectTap'>
-      <text class='select_text'>12.25元（已优惠4.45元）</text>
+      <text class='select_text'>{{datauser.o_money}}元</text>
       <image class='select_img {{show&&"select_img_rotate"}}' src='http://49.234.64.182:86/static/applet/img/zhankai.png'></image>   
     </view>
     <view class='option_box {{show&&"option_box_on"}}' >

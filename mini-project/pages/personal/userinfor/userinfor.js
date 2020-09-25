@@ -102,7 +102,8 @@ Page({
       })
     },
   onLoad: function(options) {
-    
+    var value=wx.getStorageSync('user');
+    console.log(value);
     // var showDialog = getApp().globalData.showDialog
     // console.log( showDialog)
     // // 生命周期函数--监听页面加载
