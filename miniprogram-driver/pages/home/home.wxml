@@ -1,13 +1,42 @@
-<!--pages/home/home.wxml-->
-<view class="contain">
- <!-- 导航栏 -->
- <scroll-view class="tab" scroll-x scroll-left="{{tabScroll}}" scroll-with-animation="true">
- <block wx:for="{{menuList}}" wx:key="index">
-  <view class="tab-item {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap='clickMenu'>{{item.name}}</view>
- </block>
- </scroll-view>
- <!-- 页面 -->
- <swiper class="content" style='height: {{height}}px' duration="1000" current="{{currentTab}}" bindchange="changeContent">
- <swiper-item class="content-item" wx:for="{{menuList}}" wx:key="index">这里是{{item.name}}</swiper-item>
- </swiper>
+
+<view class='ticket-container'>
+  <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}">
+    <!--Tab布局-->
+    <view>
+      <view class="icon1">
+        <image class="image" src="http://49.234.64.182:86/static/applet/img/个人中心.png"></image>
+      </view>
+      <view class='title'>
+        <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
+          <text>首页</text>
+          <hr class="line-style"/>
+        </view>
+        
+        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+          <text>车主服务</text>
+          <hr class="line-style"/>
+        </view>
+        <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+          <text>金融精选</text>
+          <hr class="line-style" />
+        </view>
+      </view>
+      <view class="icon2">
+        <image class="image" src="http://49.234.64.182:86/static/applet/img/礼物.png"></image>
+      </view>
+    </view>
+    <!--内容布局-->
+    <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+      <swiper-item class='swiper'>
+        123
+      </swiper-item>
+      <swiper-item class='swiper' class='swiper'>
+        321
+      </swiper-item>
+      <swiper-item class='swiper' class='swiper'>
+        322
+      </swiper-item>
+    </swiper>
+  </scroll-view>
 </view>

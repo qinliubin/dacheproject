@@ -1,36 +1,103 @@
-.contain{
-  width: 100%;
+
+.container {
   height: 100%;
- }
- .tab{
-  width: 100%;
-  height: 100rpx;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  white-space: nowrap;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  overflow: hidden;
-  line-height: 100rpx;
-   
+}
+ .icon{
+  width: 10%;
+  height: 88rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
  }
- .tab-item{
-  display: inline-block;
-  width: 20%;
+ .icon1{
+   width: 10%;
+   height: 88rpx;
+   text-align: center;
+   position: absolute;
+   top: 10rpx;
+   left: 10rpx;
+ }
+ .icon2{
+  width: 10%;
+  height: 88rpx;
   text-align: center;
-  font-size: 14px;
-  color: #8f9193;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+ .image{
+   width: 66rpx;
+   height: 66rpx;
+   margin: auto;
  }
- .active{
-  color: #ff502c
+ .text{
+   font-size: 19rpx;
  }
- .content{
-  padding-top: 100rpx;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 14px;
- }
- .content-item{
-  overflow-y: scroll
- }
+.title {
+  width: 80%;
+  height: 88rpx;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ 
+.title-sel {
+  color: #24272c;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.title-sel  .line-style{
+  background: #fff;
+  height: 6rpx;
+  width: 40rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+ 
+.title-sel-selected{
+  color: #006bff;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-sel-selected .line-style{
+  background: #006bff;
+  height: 6rpx;
+  width: 90rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+ 
+.swiper {
+  width: 90%;
+  flex: 1;
+  overflow: scroll;
+  margin: 0 auto;
+}
+ 
+.record-item {
+  margin-top: 10rpx;
+  background-color: white;
+  padding-bottom: 5rpx;
+  padding-top: 5rpx;
+  font-size: 30rpx;
+}
+ 
+.name{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 2vh;
+  border-radius: 10rpx
+}

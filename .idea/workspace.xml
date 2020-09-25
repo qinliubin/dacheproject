@@ -20,7 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/pages/home/home.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram-driver/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +46,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mini-project" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -74,7 +88,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,6 +137,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
@@ -134,10 +149,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1600496424882" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1600954316272">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1601015369841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600954316272" />
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601015369841" />
     <state x="549" y="169" key="FileChooserDialogImpl" timestamp="1601014060342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -157,10 +172,10 @@
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600954322946" />
     <state x="361" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601013383368" />
-    <state x="582" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601013731930">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601015415555">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601012707732" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601015415555" />
     <state x="582" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1601013731930" />
     <state x="465" y="204" key="git4idea.merge.GitPullDialog" timestamp="1601013746072">
       <screen x="0" y="0" width="1536" height="834" />
