@@ -1,21 +1,163 @@
 /**index.wxss**/
-.userinfo {
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.nav {
+    height: 80rpx;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    font-size: 16px;
+    white-space: nowrap;
+    
+}
+.nav-item {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+.nav-item.active{
+  color: red;
+}
+.tab-box{
+  background: greenyellow;
+  padding-top: 80rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+.tab-content{
+  overflow-y: scroll;
+}
+
+
+ .user{
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+ }
+ 
+
+.text-view{
+  width: 95%;
+  height: 300rpx;
+  box-shadow: 2px 2px 2px 2px darkgrey;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: -webkit-body;
+}
+
+.start-pos{
+  padding: 50rpx;
+  /* border-bottom: 1px solid darkgray; */
+}
+.arrive-pos{
+  padding: 50rpx;
+}
+
+
+
+
+
+.map_text{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 70px;
+  background: #fff;
+  padding: 0 10px;
+}
+/* .address-name{
+  margin: 10px 0;
+  font-size:35rpx;
+  font-weight: bold;
+  float: left;
+} */
+/* .address-desc{
+  margin: 5px 0;
+  display: block;
+  font-size:26rpx;
+} */
+.controls {
+  position: absolute;
+  width: 100rpx;
+  bottom: 150rpx;
+  right:10rpx;
+}
+ 
+.controls-center{
+  position: absolute;
+  width: 30px;
+  bottom: 30%;
+  left: 50%;
+}
+/* .controls-center-add{ */
+  /* position: absolute; */
+  /* width: 33px; */
+/* } */
+ 
+/* .controls-address-panel{
+  position: absolute;
+ width: 20px;
+ height: 20px;
+} */
+ 
+.cover-image-loading{
+  width:30px;
+  height:30px;
+  position:fixed;
+ right: 10px;
+}
+/*  
+.favorite-img {
+  width: 100rpx;
+  height: 100rpx;
+} */
+.selType-view{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  height: 50%;
+  line-height: 74px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+.selType{
+  width: 40%;
+  position: relative;
   margin: 20rpx;
-  border-radius: 50%;
+}
+.text-view2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  height: 300rpx;
+  box-shadow: 2px 2px 2px 2px darkgrey;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: -webkit-body;
+}
+ .fail{
+  width: 60%;
+  text-align: right;
+  position: relative;
+  right: 61rpx;
+}
+.money{
+  position: relative;
+  right: 42rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/* .selector-view{
+  
 }
+.selector{
 
-.usermotto {
-  margin-top: 200px;
-}
+} */

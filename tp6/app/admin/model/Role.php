@@ -1,6 +1,6 @@
 <?php
 
-
+//角色表
 namespace app\admin\model;
 
 

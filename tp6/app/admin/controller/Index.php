@@ -72,6 +72,7 @@ public function allRole(Role $role){
         return json($data);
 //    }
     }
+//    获得所有员工
     public function allAdmin(Admin $admin){
 //    public function alluser(User $user){
         $res=$admin->db()->leftJoin('DD_role r','r.r_id = DD_Admin.r_id')->order('r.r_id')->select();
@@ -81,6 +82,7 @@ public function allRole(Role $role){
         return json($data);
 //    }
     }
+//    增加员工
 public function AddEmployee(Admin $admin){
     $a_acc=Request::param('a_acc');
     $a_name=Request::param('a_name');
@@ -93,5 +95,44 @@ public function AddEmployee(Admin $admin){
         $data=array('code'=>'10001','msg'=>'添加成功');
     }
     return json($data);
+}
+//获得角色名称
+public function getNowRole(Role $role){
+    $r_id=Request::param('r_id');
+    $res=$role->db()->where('r_id','=',$r_id)->find();
+    if ($res){
+        return json(array('code'=>'20001','data'=>$res));
+    }else{
+        return json(array('code'=>'20002'));
+    }
+}
+//修改员工信息
+public function resetEmployee(Admin $admin){
+    $r_id=Request::param('r_id');
+    $a_id=Request::param('a_id');
+    $a_name=Request::param('a_name');
+    $res=$admin->Db()->where('a_id',$a_id)->update(['r_id'=>$r_id,'a_name'=>$a_name]);
+    if ($res){
+        return json(array('code'=>'30001','data'=>$res));
+    }else{
+        return json(array('code'=>'30002'));
+    }
+}
+//删除员工
+public function delEmployee(Admin $admin){
+    $a_id=Request::param('a_id');
+    $res=$admin->Db()->delete($a_id);
+    if ($res){
+        return json(array('code'=>'40001','msg'=>'删除成功'));
+    }
+}
+//查找员工
+public function searchEmployee(Admin $admin){
+    $a_name=Request::param('a_name');
+    $res=$admin->db()->where('a_name','like',"%".$a_name."%")->select();
+    $count =count($res);
+    if ($res){
+        return json(array('code'=>'50001',"count"=>$count,'data'=>$res));
+    }
 }
 }

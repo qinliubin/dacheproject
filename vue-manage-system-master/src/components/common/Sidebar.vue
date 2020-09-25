@@ -140,13 +140,28 @@ alert('1');
                     ]
                 },
                 {
+                    icon: 'el-icon-lx-favor',
+                    index: '5',
+                    title: '广告管理',
+                    subs: [
+                        {
+                            index: '/putadv',
+                            title: '广告发布'
+                        },
+                        {
+                            index: '/adv',
+                            title: '广告管理'
+                        }
+                    ]
+                },
+                {
                     icon: 'el-icon-pie-chart',
                     index: '/table',
                     title: '订单管理'
                 },
                 {
                     icon: 'el-icon-rank',
-                    index: '6',
+                    index: '7',
                     title: '活动管理',
                     subs: [
                         {
@@ -166,18 +181,8 @@ alert('1');
                 },
                 {
                     icon: 'el-icon-lx-redpacket_fill',
-                    index: '7',
-                    title: '收费模块',
-                    subs: [
-                        {
-                            index: 'permission',
-                            title: '权限测试'
-                        },
-                        {
-                            index: '404',
-                            title: '404页面'
-                        }
-                    ]
+                    index: '/chardes',
+                    title: '收费管理',
                 },
                 {
                     icon: 'el-icon-lx-warn',
@@ -185,7 +190,7 @@ alert('1');
                     title: '客服聊天'
                 },
                 {
-                    icon: 'el-icon-pie-chart',
+                    icon: 'el-icon-lx-rank',
                     index: 'charts',
                     title: '报表统计'
                 },

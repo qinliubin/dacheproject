@@ -3,23 +3,24 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item>
-                    <i class="el-icon-lx-cascades"></i> 基础表格
+                    <i class="el-icon-lx-cascades"></i> 角色管理
                 </el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
             <div class="handle-box">
-                <el-button
-                        type="primary"
-                        icon="el-icon-delete"
-                        class="handle-del mr10"
-                        @click="delAllSelection"
-                >批量删除</el-button>
-                <el-select v-model="query.address" placeholder="地址" class="handle-select mr10">
-                    <el-option key="1" label="广东省" value="广东省"></el-option>
-                    <el-option key="2" label="湖南省" value="湖南省"></el-option>
-                </el-select>
-                <el-input v-model="query.name" placeholder="用户名" class="handle-input mr10"></el-input>
+<!--                <el-button-->
+<!--                        type="primary"-->
+<!--                        icon="el-icon-delete"-->
+<!--                        class="handle-del mr10"-->
+<!--                        @click="delAllSelection"-->
+<!--                >批量删除</el-button>-->
+                <el-button type="primary" class="handle-del mr10" @click="AddRole">添加角色</el-button>
+<!--                <el-select v-model="query.address" placeholder="地址" class="handle-select mr10">-->
+<!--                    <el-option key="1" label="广东省" value="广东省"></el-option>-->
+<!--                    <el-option key="2" label="湖南省" value="湖南省"></el-option>-->
+<!--                </el-select>-->
+                <el-input v-model="query.r_name" placeholder="角色名" class="handle-input mr10"></el-input>
                 <el-button type="primary" icon="el-icon-search" @click="handleSearch">搜索</el-button>
             </div>
             <el-table
@@ -86,21 +87,21 @@
         <el-dialog title="修改权限" :visible.sync="uplimitVisible" width="50%">
             <div class="drag-box">
                 <div class="drag-box-item">
-                    <div class="item-title">所有权限</div>
-                    <draggable v-model="alllimit" @remove="removeHandle" :options="dragOptions">
+                    <div class="item-title">未拥有的权限</div>
+                    <draggable v-model="alllimit" :options="dragOptions">
                         <transition-group tag="div" id="todo" class="item-ul">
-                            <div v-for="item in alllimit" class="drag-list" :key="item.id">
-                                {{item.content}}
+                            <div v-for="item in alllimit" class="drag-list" :key="item.au_id">
+                                {{item.au_content}}
                             </div>
                         </transition-group>
                     </draggable>
                 </div>
                 <div class="drag-box-item">
                     <div class="item-title">拥有权限</div>
-                    <draggable v-model="nowlimit" @remove="removeHandle" :options="dragOptions">
+                    <draggable v-model="nowlimit" :options="dragOptions">
                         <transition-group tag="div" id="doing" class="item-ul">
-                            <div v-for="item in nowlimit" class="drag-list" :key="item.id">
-                                {{item.content}}
+                            <div v-for="item in nowlimit" class="drag-list" :key="item.au_id">
+                                {{item.au_content}}
                             </div>
                         </transition-group>
                     </draggable>
@@ -109,7 +110,23 @@
             </div>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="editVisible = false">取 消</el-button>
-                <el-button type="primary" @click="saveEdit">确 定</el-button>
+                <el-button type="primary" @click="savelimit">确 定</el-button>
+            </span>
+        </el-dialog>
+        <!-- 增加角色弹出框 -->
+        <el-dialog title="编辑" :visible.sync="addnew" width="30%">
+            <el-form :model="Add" :rules="rules"  ref="addRole" label-width="70px">
+                <el-form-item label="角色名" prop="r_name">
+                    <el-input v-model="Add.r_name" placeholder="请输入新的角色名称">
+                    </el-input>
+                </el-form-item>
+                <el-form-item label="描述" prop="r_depict">
+                    <el-input v-model="Add.r_depict" placeholder="请输入新增加的角色描述"></el-input>
+                </el-form-item>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="addnew = false">取 消</el-button>
+                <el-button type="primary" @click="saveAdd()">确 定</el-button>
             </span>
         </el-dialog>
     </div>
@@ -122,8 +139,8 @@
         data() {
             return {
                 query: {
-                    address: '',
-                    name: '',
+                    r_depict: '',
+                    r_name: '',
                     pageIndex: 1,
                     pageSize: 10
                 },
@@ -131,9 +148,14 @@
                 multipleSelection: [],
                 delList: [],
                 editVisible: false,
+                addnew:false,
                 uplimitVisible:false,
                 pageTotal: 0,
                 form: {},
+                Add:{
+                    r_name:'',
+                    r_depict:'',
+                },
                 idx: -1,
                 id: -1,
                 dragOptions:{
@@ -142,40 +164,14 @@
                     group: 'sortlist',
                     ghostClass: 'ghost-style'
                 },
-
-                alllimit: [
-                    {
-                        id: 1,
-                        content: '开发图表组件'
-                    },
-                    {
-                        id: 2,
-                        content: '开发拖拽组件'
-                    },
-                    {
-                        id: 3,
-                        content: '开发权限测试组件'
-                    }
-                ],
-                nowlimit: [
-                    {
-                        id: 1,
-                        content: '开发登录注册页面'
-                    },
-                    {
-                        id: 2,
-                        content: '开发头部组件'
-                    },
-                    {
-                        id: 3,
-                        content: '开发表格相关组件'
-                    },
-                    {
-                        id: 4,
-                        content: '开发表单相关组件'
-                    }
-                ],
-
+                rules:{
+                    r_name:[{ required: true, message: '请输入角色名称', trigger: 'blur' },
+                        { min: 2, max: 7, message: '长度在 2 到 7个字符', trigger: 'blur' }],
+                    r_depict:[{ required: true, message: '请输入角色描述', trigger: 'blur' },
+                        { min: 2, max: 15, message: '长度在 2 到 15个字符', trigger: 'blur' }],
+                },
+                alllimit: [],
+                nowlimit: [],
             };
         },
         created() {
@@ -191,15 +187,58 @@
                 this.$axios.get('admin/allRole').then(
                     response =>{
                         console.log(this.info = response.data)
-                       this.tableData=response.data.data
+                       this.tableData=response.data.data.slice((this.query.pageIndex-1)*this.query.pageSize,this.query.pageIndex*this.query.pageSize);
                         this.pageTotal=response.data.count
+                    }
+                )
+            },
+            getlimit(rid){
+                let username = localStorage.getItem('ms_username');
+                this.$axios.post(
+                    'admin/RoleManagement/getnowlimt',
+                    {
+                        r_id:rid,
+                    }
+                ).then(
+                    response =>{
+                        console.log(response.data.data);//用户拥有的权限
+                        console.log( response.data.data1);//所有权限
+                        this.oldlimit=response.data.data;
+                        for(var i=0;i<response.data.data1.length;i++){
+                            for(var j=0;j<response.data.data.length;j++){
+                                if(response.data.data1[i].au_id==response.data.data[j].au_id){
+                                    // console.log(response.data.data1[i].au_id);
+                                    response.data.data1.splice(i,1);
+                                }
+                            }
+                        }
+                        this.alllimit=response.data.data1;
+                        this.nowlimit=response.data.data;
+                        console.log(this.alllimit);//用户没有的权限
+                        console.log(this.nowlimit);//所有权限
                     }
                 )
             },
             // 触发搜索按钮
             handleSearch() {
-                this.$set(this.query, 'pageIndex', 1);
-                this.getData();
+                if(this.query.r_name!=''){
+                    this.$axios.post(
+                        'admin/RoleManagement/searchRole',
+                        {
+                            r_name:this.query.r_name,
+                        }
+                    ).then(response=>{
+                        if(response.data.code=='50001'){
+                            this.$message.success('查找成功');
+                            console.log(response.data.data);
+                            this.tableData=response.data.data.slice((this.query.pageIndex-1)*this.query.pageSize,this.query.pageIndex*this.query.pageSize);
+                            this.pageTotal=response.data.count;
+                        }}
+                    )
+                }else{
+                    this.getData();
+                    this.$message.error('输入不能为空');
+                }
             },
             // 删除操作
             handleDelete(index, row) {
@@ -208,8 +247,22 @@
                     type: 'warning'
                 })
                     .then(() => {
-                        this.$message.success('删除成功');
-                        this.tableData.splice(index, 1);
+                        this.$axios.post(
+                            'admin/RoleManagement/delRole',
+                            {
+                                r_id:row.r_id,
+                            }
+                        ).then(response=>{
+                            if(response.data.code=='40001'){
+                                this.$message.success('删除成功');
+                                console.log(row);
+                                this.tableData.splice(index, 1);
+                                this.pageTotal-=1;
+                            }else if(response.data.code=='40002'){
+                                this.$message.error(response.data.msg);
+                            }
+                        }
+                        )
                     })
                     .catch(() => {});
             },
@@ -238,33 +291,98 @@
                 this.idx = index;
                 this.form = row;
                 this.uplimitVisible = true;
+                this.getlimit(row.r_id);
+            },
+            //保存权限修改
+            savelimit(){
+                this.$axios.post(
+                    'admin/RoleManagement/uplimit',
+                    {
+                        r_id:this.form.r_id,
+                        nowlimit:this.nowlimit,
+                    }
+                ).then(
+                    response =>{
+                        console.log(response.data);
+                        if(response.data.code=='30001'){
+                            this.uplimitVisible = false;
+                            this.$message.success(response.data.msg);
+                        }
+                    }
+                )
+
             },
             // 保存编辑
             saveEdit() {
                 this.editVisible = false;
-                this.$message.success(`修改第 ${this.idx + 1} 行成功`);
-                this.$set(this.tableData, this.idx, this.form);
-                console.log(this.idx,this.form);
-                this.$axios.get('admin/updataRole', {
-                   data:this.form
+                this.$axios.post(
+                    'admin/RoleManagement/resetRole',
+                    {
+                        r_id:this.form.r_id,
+                        r_name:this.form.r_name,
+                        r_depict:this.form.r_depict,
+                    }
+                ).then(response=>{
+                    if (response.data.code=='30001'){
+                        console.log(response.data.data.r_name)
+                        this.$set(this.tableData, this.idx, this.form);
+                        console.log(this.form);
+                        this.$message.success(`修改第 ${this.idx + 1} 行成功`);
+                    }
                 })
-                    .then(function (response) {
-                        console.log(response.data);
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
             },
             // 分页导航
             handlePageChange(val) {
                 this.$set(this.query, 'pageIndex', val);
                 this.getData();
             },
-            // 拖拽移动
-            removeHandle(event){
-                console.log(event);
-                this.$message.success(`从 ${event.from.id} 移动到 ${event.to.id} `);
-            }
+            // // 拖拽移动
+            // removeHandle(event){
+            //     console.log(this.nowlimit);
+            //     console.log(this.alllimit);
+            //     console.log(event);
+            //     this.$message.success(`从 ${event.from.id} 移动到 ${event.to.id} `);
+            // },
+            // // 拖拽移动（删除）
+            // removedel(event){
+            //     console.log(this.nowlimit);
+            //     console.log(this.alllimit);
+            //     this.$message.success(`从 ${event.from.id} 移动到 ${event.to.id} `);
+            // },
+            //添加操作
+            AddRole(){
+                this.addnew=true;
+            },
+            //保存添加
+            saveAdd(){
+                this.$refs.addRole.validate(valid => {
+                    if (valid) {
+                        // console.log(this.param.username);
+                        // console.log(this.param.password);
+                        this.$axios.post('admin/RoleManagement/AddRole',
+                            {
+                                r_name:this.Add.r_name,
+                                r_depict:this.Add.r_depict,
+                            }
+                        ).then(
+                            response =>{
+                                console.log(this.info = response.data)
+                                if (response.data.code=='10001'){
+                                    this.$message.success(response.data.msg);
+                                    this.addnew = false;
+                                    this.getData();
+                                }else {
+                                    this.$message.error(response.data.msg);
+                                }
+                            }
+                        )
+                    } else {
+                        this.$message.error('输入不能为空');
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
         }
     };
 </script>
