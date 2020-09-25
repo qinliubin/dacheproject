@@ -101,3 +101,36 @@
   padding: 2vh;
   border-radius: 10rpx
 }
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background: #fff; */
+  background: -webkit-linear-gradient(top,pink,lightblue,skyblue);
+  /* background: #fff; */
+  opacity: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+.row{
+  margin-top: 20rpx;
+  overflow: hidden;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #777;
+  background: #fff;
+ 
+ }
+ .info-input{
+  height: 100rpx;
+  margin-left: 50rpx;
+  color: #777;
+    float: left;
+ }
+ .button{
+   margin-top: 20rpx;
+ }

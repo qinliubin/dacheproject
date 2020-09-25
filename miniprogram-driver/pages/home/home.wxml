@@ -1,4 +1,23 @@
-
+<view class="modal-mask" wx:if="{{modalmask}}">
+  <view class='row'>
+    <view class='info'>
+      <input class= 'info-input' bindinput="IDnum" placeholder="请输入你的身份证号码" />
+    </view>
+  </view>
+  <view class='row'>
+    <view class='info'>
+      <input class= 'info-input' bindinput="drive" placeholder="请输入你的驾驶证号" />
+    </view>
+  </view>
+  <view class='row'>
+    <view class='info'>
+      <input class= 'info-input' bindinput="driving" placeholder="请输入你的驾龄" />
+    </view>
+  </view>
+  <view class="button">
+    <button type="primary" bindtap="insubmit">提交</button>
+  </view>
+</view>
 <view class='ticket-container'>
   <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
     scroll-top="{{scrollTop}}">

@@ -65,7 +65,7 @@ Page({
               success:()=>{
                 setTimeout(()=> {
                   wx.setStorage({
-                    data: that.data.phone,
+                    data: that.data.username,
                     key: 'FAUserAcc',
                   }),
                   wx.navigateTo({
