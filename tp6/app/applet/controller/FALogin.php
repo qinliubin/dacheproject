@@ -46,4 +46,31 @@ class FALogin
             echo json_encode(array('code'=>1001,'msg'=>'登录成功','res'=>$res));
         }
     }
+    public function onLoadphone(Driver $user){
+        $phone=$_GET['phone'];
+        $res=$user->db()->where([
+            ["d_phone","=",$phone],
+            ["d_IDnum",'<>',"null"]
+        ])->find();
+        if ($res==[]){
+            echo json_encode(array('code'=>1001));
+        }else{
+            echo json_encode(array('code'=>1002));
+        }
+    }
+    public function modifiedData(Driver $user){
+        $phone=$_GET['phone'];
+        $IDnum=$_GET['IDnum'];
+        $drive=$_GET['drive'];
+        $driving=$_GET['driving'];
+        $data = ['d_IDnum' => $IDnum,
+            'd_drive' => $drive,
+            'd_driving' => $driving];
+        $res=$user->db()->insertGetId($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'填写成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'填写失败'));
+        }
+    }
 }
