@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020/09/18 15:33 newProject QLB">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_18_0018_16_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_18_0018_16_51__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020.9.24.21.31  林杰  更新司机端">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/login/login.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/utils/qqmap-wx-jssdk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp6/app/applet/controller/FALogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp6/app/applet/controller/FALogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp6/app/applet/model/FAUser.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +66,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpstudy_pro/WWW/linjietp6" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,8 +87,9 @@
       <workItem from="1600418759238" duration="380000" />
       <workItem from="1600495661031" duration="61000" />
       <workItem from="1600496302466" duration="895000" />
-      <workItem from="1600953928786" duration="346000" />
-      <workItem from="1601005234904" duration="1398000" />
+      <workItem from="1600953928786" duration="441000" />
+      <workItem from="1601001310161" duration="1537000" />
+      <workItem from="1601012689056" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -93,36 +98,63 @@
       <option name="project" value="LOCAL" />
       <updated>1600414466167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020.9.24.21.31  林杰  更新司机端">
+      <created>1600954317132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600954317132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/09/18 15:33 newProject QLB" />
+    <MESSAGE value="2020.9.24.21.31  林杰  更新司机端" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.9.24.21.31  林杰  更新司机端" />
   </component>
   <component name="WindowStateProjectService">
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600496424882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1600496424882" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600497146517">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1600954316272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600497146517" />
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600954316272" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601001324955">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601001324955" />
     <state x="581" y="132" key="NewPhpClassDialog" timestamp="1600496617979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="581" y="132" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1600496617979" />
-    <state x="270" y="56" key="SettingsEditor" timestamp="1600495696365">
+    <state x="270" y="56" key="SettingsEditor" timestamp="1601012735072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600495696365" />
-    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600497007041">
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601012735072" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600954322946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600497007041" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600954322946" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601012707732">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601012707732" />
   </component>
 </project>

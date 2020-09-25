@@ -3,11 +3,11 @@
 
 namespace app\applet\controller;
 
-use app\applet\model\FAUser;
+use app\applet\model\Driver;
 
 class FALogin
 {
-    public function FAregister(FAUser $user){
+    public function FAregister(Driver $user){
         $phone=$_GET['phone'];
         $res=$user->db()->where([
             ["d_phone","=",$phone]
@@ -18,7 +18,7 @@ class FALogin
             echo json_encode(array('code'=>1001,'msg'=>'手机号已注册！'));
         }
     }
-    public function register(FAUser $user){
+    public function register(Driver $user){
         $phone=$_GET['phone'];
         $pwd=md5($_GET['pwd']);
         $data = ['d_acc' => $phone,
@@ -32,7 +32,7 @@ class FALogin
             echo json_encode(array('code'=>1002,'msg'=>'注册失败'));
         }
     }
-    public function login(FAUser $user){
+    public function login(Driver $user){
         $phone=$_GET['phone'];
         $pwd=md5($_GET['pwd']);
         $res=$user->db()->where([
