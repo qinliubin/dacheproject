@@ -4,6 +4,8 @@
     "pages/register/register",
     "pages/login/login",
     "pages/information/information",
+    "pages/PersonalCenter/PersonalCenter",
+    "pages/activityCenter/activityCenter",
     "pages/logs/logs"
   ],
   "window":{

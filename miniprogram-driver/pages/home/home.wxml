@@ -24,7 +24,7 @@
     <!--Tab布局-->
     <view>
       <view class="icon1">
-        <image class="image" src="http://49.234.64.182:86/static/applet/img/个人中心.png"></image>
+        <image class="image" src="http://49.234.64.182:86/static/applet/img/个人中心.png" bindtap="onPersonalCenter"></image>
       </view>
       <view class='title'>
         <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
@@ -42,19 +42,22 @@
         </view>
       </view>
       <view class="icon2">
-        <image class="image" src="http://49.234.64.182:86/static/applet/img/礼物.png"></image>
+        <image class="image" src="http://49.234.64.182:86/static/applet/img/礼物.png" bindtap="onActivityCenter"></image>
       </view>
     </view>
     <!--内容布局-->
     <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+      <!-- 首页 -->
       <swiper-item class='swiper'>
-        123
+        这是首页
       </swiper-item>
+      <!-- 车主服务 -->
       <swiper-item class='swiper' class='swiper'>
-        321
+        这是车主服务
       </swiper-item>
+      <!-- 金融精选 -->
       <swiper-item class='swiper' class='swiper'>
-        322
+        这是金融精选
       </swiper-item>
     </swiper>
   </scroll-view>

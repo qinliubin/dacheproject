@@ -109,8 +109,8 @@
   left: 0;
   /* background: #fff; */
   background: -webkit-linear-gradient(top,pink,lightblue,skyblue);
-  /* background: #fff; */
-  opacity: 1;
+  background: #66CCFF;
+  opacity: 0.4;
   overflow: hidden;
   z-index: 1;
 }
