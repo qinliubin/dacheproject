@@ -25,14 +25,15 @@
       <!-- 快车 -->
       <swiper-item >
         <!--地图 -->
-        <view class="section map_container">
+        <view class="section map_container" style="position:relative;">
             <map id="loactionMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location='true' style="width:{{windowWidth}}px; height:{{windowHeight*2/3}}px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
-             
+              <image style="width:40rpx;height:40rpx;z-index:30;position:fixed;left:{{windowWidth-30}}px;top:{{windowHeight/19}}px" src="../img/position.png" bindtap="localAddress"></image>
+              
             </map>
-            <cover-view style="width:30px;height:30px;position:fixed;left:{{windowWidth-50}}px;top: {{windowHeight/9}}px;z-index:100;">
-                 <cover-image class="" bindtap="localAddress" src="../img/position.png" />
-            </cover-view>
-            
+            <!-- <cover-view style="position:absolute;top:200px;z-index:100;">
+                 <cover-image class="" bindtap="" src="../img/position.png" style="width:30px;height:30px;"/>
+            </cover-view> -->
+           
         </view>
    
         <view class="text-view" wx:if="{{address=='' || arriver==''}}">
@@ -73,17 +74,18 @@
       </swiper-item>
       <!-- 出租车 -->
       <swiper-item>
-        <view class="section map_container">
+        <view class="section map_container" style="position:relative;">
           <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
-        
-                <cover-view >
-                  <cover-view class="address-name">{{textData.name}}</cover-view>
-                  <cover-image class="cover-image-loading" bindtap="localAddress" src="../img/position.png" />
-                </cover-view>
-                <cover-view class="address-desc">{{textData.desc}}</cover-view>
+            <image style="width:40rpx;height:40rpx;z-index:30" src="../img/self.png"></image>
+            
               <!-- </cover-view> -->
             <!-- </cover-view> -->
           </map>
+          <cover-view style="position:absolute;top:200px;z-index:100;">
+                 <cover-image class="" bindtap="localAddress" src="../img/position.png" style="width:30px;height:30px;"/>
+            </cover-view>
+           
+
         </view>
    
     <view class="text-view" wx:if="{{address=='' || arriver==''}}">
@@ -110,21 +112,16 @@
       <swiper-item>
 
         <view class="section map_container">
-  <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
-    <cover-view class="controls-center" >
-      <cover-image class="location-center-img" src="../img/other.png" />
-    </cover-view>
- 
-   
-        <cover-view >
-          <cover-view class="address-name">{{textData.name}}</cover-view>
-          <cover-image class="cover-image-loading" bindtap="localAddress" src="../img/position.png" />
+        <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
+        
+      
+        
+            
+        </map>
+        <cover-view style="width:30px;height:30px;position:fixed;left:{{windowWidth-50}}px;top: {{windowHeight/9}}px;z-index:100;">
+            <cover-image class="" bindtap="localAddress" src="../img/position.png" />
         </cover-view>
-        <cover-view class="address-desc">{{textData.desc}}</cover-view>
-      <!-- </cover-view> -->
-    <!-- </cover-view> -->
-  </map>
-</view>
+      </view>
    
     <view class="text-view" wx:if="{{address=='' || arriver==''}}">
         <input type="text" placeholder="起始位置" class="start-pos" bindtap="getStartLocal" value="{{address}}"/>
@@ -148,21 +145,13 @@
       <!-- 专车 -->
       <swiper-item>
         <view class="section map_container">
-  <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
-    <cover-view class="controls-center" >
-      <cover-image class="location-center-img" src="../img/other.png" />
-    </cover-view>
- 
-   
-        <cover-view >
-          <cover-view class="address-name">{{textData.name}}</cover-view>
-          <cover-image class="cover-image-loading" bindtap="localAddress" src="../img/position.png" />
-        </cover-view>
-        <cover-view class="address-desc">{{textData.desc}}</cover-view>
-      <!-- </cover-view> -->
-    <!-- </cover-view> -->
-  </map>
-</view>
+          <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
+          
+          </map>
+          <cover-view style="width:30px;height:30px;position:fixed;left:{{windowWidth-50}}px;top: {{windowHeight/9}}px;z-index:100;">
+              <cover-image class="" bindtap="localAddress" src="../img/position.png" />
+          </cover-view>
+      </view>
    
     <view class="text-view" wx:if="{{address=='' || arriver==''}}">
         <input type="text" placeholder="起始位置" class="start-pos" bindtap="getStartLocal" value="{{address}}"/>
@@ -186,21 +175,14 @@
       <!-- 代驾 -->
       <swiper-item>
         <view class="section map_container">
-  <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
-    <cover-view class="controls-center" >
-      <cover-image class="location-center-img" src="../img/other.png" />
-    </cover-view>
- 
-    
-        <cover-view >
-          <cover-view class="address-name">{{textData.name}}</cover-view>
-          <cover-image class="cover-image-loading" bindtap="localAddress" src="../img/position.png" />
+          <map id="" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" style="width: 100%; height: 300px;" bindregionchange="regionChange" markers="{{markers}}" polyline="{{polyline}}" >
+          
+      
+          </map>
+          <cover-view style="width:30px;height:30px;position:fixed;left:{{windowWidth-50}}px;top: {{windowHeight/9}}px;z-index:100;">
+              <cover-image class="" bindtap="localAddress" src="../img/position.png" />
         </cover-view>
-        <cover-view class="address-desc">{{textData.desc}}</cover-view>
-      <!-- </cover-view> -->
-    <!-- </cover-view> -->
-  </map>
-</view>
+        </view>
    
     <view class="text-view" wx:if="{{address=='' || arriver==''}}">
         <input type="text" placeholder="起始位置" class="start-pos" bindtap="getStartLocal" value="{{address}}"/>

@@ -8,6 +8,9 @@ const app = getApp()
 
 Page({
     data: {
+      position:{
+        left:30
+      },
       screenWidth:'',//屏幕的宽度
       screenHeight:'',//屏幕的高度
      mapid:'loactionMap',
@@ -322,10 +325,6 @@ Page({
   },
 //回到用户的地理位置
 localAddress:function(){
-  
-    // let id=this.data.mapid;
-    // console.log(id)
-    
     const mpCtx = wx.createMapContext("loactionMap");
     mpCtx.moveToLocation();
     console.log(1)
@@ -360,6 +359,7 @@ localAddress:function(){
     },
     //滑动导航栏
     switchTab(event){
+      
         let nav='';
         let cur = event.detail.current;
         let arr=this.data.navData
