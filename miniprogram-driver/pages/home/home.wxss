@@ -110,7 +110,7 @@
   /* background: #fff; */
   background: -webkit-linear-gradient(#66CCFF, #D9D9D9,pink);
   /* background: #66CCFF; */
-  opacity: 0.4;
+  opacity: 1;
   overflow: hidden;
   z-index: 1;
 }

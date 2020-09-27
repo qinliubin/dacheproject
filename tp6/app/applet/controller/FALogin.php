@@ -50,12 +50,15 @@ class FALogin
         $phone=$_GET['phone'];
         $res=$user->db()->where([
             ["d_phone","=",$phone],
-            ["d_IDnum",'<>',"null"]
+            ["d_IDnum",'<>',"null"],
+            ["d_drive",'<>',"null"],
+            ["d_driving",'<>',"null"],
         ])->find();
+//        echo $res;
         if ($res==[]){
-            echo json_encode(array('code'=>1001));
+            echo json_encode(array('code'=>1001,'res'=>$res));
         }else{
-            echo json_encode(array('code'=>1002));
+            echo json_encode(array('code'=>1002,'res'=>$res));
         }
     }
     public function modifiedData(Driver $user){
@@ -66,11 +69,90 @@ class FALogin
         $data = ['d_IDnum' => $IDnum,
             'd_drive' => $drive,
             'd_driving' => $driving];
-        $res=$user->db()->insertGetId($data);
+        $res=$user->db()
+            ->where("d_phone", "=",$phone)
+            ->update($data);
         if ($res>0){
             echo json_encode(array('code'=>1001,'msg'=>'填写成功'));
         }else{
             echo json_encode(array('code'=>1002,'msg'=>'填写失败'));
+        }
+    }
+    public function personal(Driver $user){
+        $acc=$_GET['acc'];
+        $res=$user->db()->where([
+            ["d_acc","=",$acc]
+        ])->find();
+        if ($res!=[]){
+            echo json_encode(array('code'=>1001,'msg'=>'获取成功','data'=>$res));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'哎呀出错了！'));
+        }
+    }
+    public function onName(Driver $user){
+        $acc=$_GET['acc'];
+        $name=$_GET['name'];
+        $data = ['d_name' => $name];
+        $res=$user->db()
+            ->where("d_acc", "=",$acc)
+            ->update($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'修改成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
+        }
+    }
+    public function onPhone(Driver $user){
+        $acc=$_GET['acc'];
+        $phone=$_GET['phone'];
+        $data = ['d_acc' => $phone,
+            'd_phone' => $phone,];
+        $res=$user->db()
+            ->where("d_acc", "=",$acc)
+            ->update($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'修改成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
+        }
+    }
+    public function onNum(Driver $user){
+        $acc=$_GET['acc'];
+        $num=$_GET['num'];
+        $data = ['d_IDnum' => $num];
+        $res=$user->db()
+            ->where("d_acc", "=",$acc)
+            ->update($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'修改成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
+        }
+    }
+    public function onDriving(Driver $user){
+        $acc=$_GET['acc'];
+        $driving=$_GET['driving'];
+        $data = ['d_drive' => $driving];
+        $res=$user->db()
+            ->where("d_acc", "=",$acc)
+            ->update($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'修改成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
+        }
+    }
+    public function onYears(Driver $user){
+        $acc=$_GET['acc'];
+        $years=$_GET['years'];
+        $data = ['d_driving' => $years];
+        $res=$user->db()
+            ->where("d_acc", "=",$acc)
+            ->update($data);
+        if ($res>0){
+            echo json_encode(array('code'=>1001,'msg'=>'修改成功'));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
         }
     }
 }

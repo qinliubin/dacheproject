@@ -10,17 +10,24 @@
     </view>
   <!-- 功能列表data-url="/pages/my_course/my_course" -->
   <view class="nav">
-    <view class="item"  formType="submit" hoverClass="none" bindtap="modalinput">
+    <view class="item"  formType="submit" hoverClass="none" bindtap="onHiddenmodalname">
+      <!-- 昵称 -->
       <view class='wallet'>
         <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
         <text>昵称</text>
-        <view style="padding-left: 52px;">{{FAUser.d_acc}}</view>
+        <view style="padding-left: 52px;" bindtap="hiddenmodalname">{{FAUser.d_name}}</view>
       </view>
       <view class="icon">
         <icon class="iconfont icon-youjiantou"></icon>
       </view>
     </view>
-    <view class="item" formType="submit" hoverClass="none" bindtap="bindnumber">
+
+    <modal hidden="{{hiddenmodalname}}" title="修改昵称" confirm-text="提交" cancel-text="取消" bindcancel="cancelHiddenmodalname" bindconfirm="confirmHiddenmodalname">
+     <view> <text style="color:blue">昵称：</text> <input type='text'placeholder="请输入内容" value='{{FAUser.d_name}}' bindblur='textHiddenmodalname' auto-focus/></view>
+  </modal>
+
+    <!-- 手机号 -->
+    <view class="item" formType="submit" hoverClass="none" bindtap="onHiddenmodalphone">
       <view class='wallet'>
         <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
         <text>手机号</text>
@@ -30,8 +37,13 @@
         <icon class="iconfont icon-youjiantou"></icon>
       </view>
     </view>
-   
-    <view class="item"  formType="submit" hoverClass="none" bindtap="bindsex">
+
+    <modal hidden="{{hiddenmodalphone}}" title="修改手机号" confirm-text="提交" cancel-text="取消" bindcancel="cancelHiddenmodalphone" bindconfirm="confirmHiddenmodalphone">
+     <view> <text style="color:blue">手机号：</text> <input type='text' placeholder="请输入内容" value='{{FAUser.d_phone}}' bindblur='textHiddenmodalphone' auto-focus/></view>
+  </modal>
+
+   <!-- 身份证号 -->
+    <view class="item"  formType="submit" hoverClass="none" bindtap="onHiddenmodalnum">
       <view class='wallet'>
         <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
         <text>身份证号</text>
@@ -41,17 +53,44 @@
         <icon class="iconfont icon-youjiantou"></icon>
       </view>
     </view>  
+
+    <modal hidden="{{hiddenmodalnum}}" title="修改身份证号" confirm-text="提交" cancel-text="取消" bindcancel="cancelHiddenmodalnum" bindconfirm="confirmHiddenmodalnum">
+      <view> <text style="color:blue">身份证号：</text> <input type='text'placeholder="请输入内容" value='{{FAUser.d_IDnum}}' bindblur='textHiddenmodalnum' auto-focus/></view>
+  </modal>
+
+    <!-- 驾驶证号 -->
+    <view class="item"  formType="submit" hoverClass="none" bindtap="onHiddenmodaldriving">
+      <view class='wallet'>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <text>驾驶证号</text>
+        <view style="padding-left: 23px;">{{FAUser.d_drive}}</view>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-youjiantou"></icon>
+      </view>
+    
+    </view> 
+
+    <modal hidden="{{hiddenmodaldriving}}" title="修改驾驶证号" confirm-text="提交" cancel-text="取消" bindcancel="cancelHiddenmodaldriving" bindconfirm="confirmHiddenmodaldriving">
+      <view> <text style="color:blue">驾驶证号：</text> <input  type='text'placeholder="请输入内容" value='{{FAUser.d_drive}}' bindblur='textHiddenmodaldriving' auto-focus/></view>
+  </modal>
+
+    <!-- 驾龄 -->
+    <view class="item"  formType="submit" hoverClass="none" bindtap="onHiddenmodalyears">
+      <view class='wallet'>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <text>驾龄</text>
+        <view style="padding-left: 52px;">{{FAUser.d_driving}}</view>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-youjiantou"></icon>
+      </view>
+    </view> 
+
+    <modal hidden="{{hiddenmodalyears}}" title="修改驾龄" confirm-text="提交" cancel-text="取消" bindcancel="cancelHiddenmodalyears" bindconfirm="confirmHiddenmodalyears">
+      <view> <text style="color:blue">驾龄：</text> <input  type='text'placeholder="请输入内容" value='{{FAUser.d_driving}}' bindblur='textHiddenmodalyears' auto-focus/></view>
+  </modal>
+
   </view>
 </form>
 
-<modal hidden="{{hiddenmodalput}}" title="修改姓名" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
-  <view> <text style="color:blue">姓名：</text> <input type='text'placeholder="请输入内容" value='{{name}}' bindblur='nameblur' auto-focus/></view>
-</modal>
-
-<modal hidden="{{hiddenmodalnum}}" title="修改手机号" confirm-text="提交" cancel-text="取消" bindcancel="cancels" bindconfirm="confirms">
-  <view> <text style="color:blue">手机号：</text> <input type='number'placeholder="请输入内容" value='{{numder}}' bindblur='numblur' auto-focus/></view>
-</modal>
-
-<modal hidden="{{hiddenmodalsex}}" title="修改性别" confirm-text="提交" cancel-text="取消" bindcancel="cancelsd" bindconfirm="confirmsd">
-  <view> <text style="color:blue">性别：</text> <input type='text'placeholder="请输入内容" value='{{textsex}}' bindblur='sexblur' auto-focus/></view>
-</modal>
