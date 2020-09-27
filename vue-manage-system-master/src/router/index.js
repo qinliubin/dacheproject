@@ -126,7 +126,24 @@ export default new Router({
                     path: '/chardes',
                     component: () => import(/* webpackChunkName: "donate" */ '../components/page/chargesManagement/Charges.vue'),
                     meta: { title: '收费管理' }
-                }
+                },
+                {
+                    // 新闻管理
+                    path: '/new',
+                    component: () => import(/* webpackChunkName: "upload" */ '../components/page/NewsManagement/news'),
+                    meta: { title: '新闻管理' }
+                },
+                {
+                    path: '/upNew',
+                    component: () => import(/* webpackChunkName: "form" */ '../components/page/NewsManagement/PressReleases'),
+                    meta: { title: '新闻发布' }
+                },
+                {
+                    // 订单管理
+                    path: '/charts',
+                    component: () => import(/* webpackChunkName: "chart" */ '../components/page/OrderManagement/Order'),
+                    meta: { title: '订单管理' }
+                },
             ]
         },
         {

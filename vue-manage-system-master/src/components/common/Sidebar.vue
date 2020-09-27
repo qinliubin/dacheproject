@@ -101,26 +101,12 @@ alert('1');
                     title: '新闻管理',
                     subs: [
                         {
-                            index: 'form',
-                            title: '已支付订单'
+                            index: '/upNew',
+                            title: '新闻发布'
                         },
                         {
-                            index: '3-2',
-                            title: '三级菜单',
-                            subs: [
-                                {
-                                    index: 'editor',
-                                    title: '富文本编辑器'
-                                },
-                                {
-                                    index: 'markdown',
-                                    title: 'markdown编辑器'
-                                }
-                            ]
-                        },
-                        {
-                            index: 'upload',
-                            title: '文件上传'
+                            index: '/new',
+                            title: '新闻管理'
                         }
                     ]
                 },
