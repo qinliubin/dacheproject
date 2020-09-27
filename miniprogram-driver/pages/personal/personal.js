@@ -49,36 +49,29 @@ Page({
   },
   //我的订单
   bindorder:function(){
-    wx.setStorageSync('driverOrders', null)
+    wx.setStorageSync('driverOrders', 0)
     wx.navigateTo({
       url: './order/order'
     })
   },
   //已付款
   noPay: function () {
-    wx.setStorageSync('driverOrders', this.data.noPay)
+    wx.setStorageSync('driverOrders', 0)
       wx.navigateTo({
          url: './order/order' 
         })
   },
   //代付款
   noSend: function () {
-    wx.setStorageSync('driverOrders', this.data.noSend)
+    wx.setStorageSync('driverOrders', 1)
       wx.navigateTo({
         url: './order/order'
       })
   },
   //已评价
   sended: function () {
-    wx.setStorageSync('driverOrders', this.data.sended)
+    wx.setStorageSync('driverOrders', 2)
       wx.navigateTo({
-        url: './order/order' 
-      })
-  },
-  //待评价
-  completed: function () {
-    wx.setStorageSync('driverOrders', this.data.completed)
-      wx.navigateTo({ 
         url: './order/order' 
       })
   },

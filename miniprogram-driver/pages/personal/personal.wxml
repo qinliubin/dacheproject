@@ -28,12 +28,8 @@
       <view>{{noSend}}</view>
     </view>
     <view class="nav-item" bindtap="sended">
-      <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/yiping.png"></image>
-      <view>{{sended}}</view>
-    </view>
-    <view class="nav-item" bindtap="completed">
       <image class="cell-img" src="http://49.234.64.182:86/static/applet/img/daiping.png"></image>
-      <view>{{completed}}</view>
+      <view>{{sended}}</view>
     </view>
   </view>
 

@@ -3,11 +3,18 @@ var app = getApp();
 Page({
   data: {
     pn:'',
-    hiddenmodalput:true,
+    hiddenmodalname:true,
+    hiddenmodalphone:true,
     hiddenmodalnum:true,
-    hiddenmodalsex:true,
+    hiddenmodaldriving:true,
+    hiddenmodalyears:true,
+    buttons: [{text: '取消'}, {text: '确定'}],
     name:'',
-    textname:'哈哈哈',
+    phone:'',
+    num:'',
+    driving:'',
+    years:'',
+    textname:'',
     numder:'',
     numbered:'13802028967',
     sex:'女',
@@ -21,79 +28,312 @@ Page({
       }
     ],
   },
+
+
   //姓名
-  modalinput: function () {
+  onHiddenmodalname: function () {
     this.setData({
-      hiddenmodalput: !this.data.hiddenmodalput
+      hiddenmodalname: !this.data.hiddenmodalname
     })
   },
-  cancel: function () {
+  cancelHiddenmodalname: function () {
     this.setData({
-      hiddenmodalput: true
+      hiddenmodalname: true
     });
   },
  //确认
-  nameblur: function (e) {
+ textHiddenmodalname: function (e) {
     this.setData({
-        name: e.detail.value
+        name: e.detail.value,
     })
   },
-  confirm: function () {
-    let name = this.data.name;
-    // console.log(name);
-    this.setData({
-      hiddenmodalput: true,
-      textname:name
+  confirmHiddenmodalname: function () {
+    var that = this
+    wx.request({
+      url: 'http://49.234.64.182:86/index.php/applet/FALogin/onName',
+      // url: 'http://tp6.com/index.php/applet/FALogin/onName', 
+      data: {
+        name:this.data.name,
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'success',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalname: true,
+                  ["FAUser.d_name"]:that.data.name
+                })
+              },1500)
+            }
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalname: true,
+                })
+              },1500)
+            }
+          })
+        }
+      }
     })
   },
   //手机号
-  bindnumber: function () {
+  onHiddenmodalphone: function () {
+    this.setData({
+      hiddenmodalphone: !this.data.hiddenmodalphone
+    })
+  },
+  cancelHiddenmodalphone: function () {
+    this.setData({
+      hiddenmodalphone: true
+    });
+  },
+ //确认
+  textHiddenmodalphone: function (e) {
+    this.setData({
+      phone: e.detail.value
+    })
+  },
+  confirmHiddenmodalphone: function () {
+    var that = this
+    wx.request({
+      url: 'http://49.234.64.182:86/index.php/applet/FALogin/onPhone',
+      // url: 'http://tp6.com/index.php/applet/FALogin/onPhone', 
+      data: {
+        phone:this.data.phone,
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'success',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                wx.setStorageSync('FAUserAcc', that.data.phone)
+                that.setData({
+                  hiddenmodalphone: true,
+                 ["FAUser.d_phone"]:that.data.phone
+                })
+              },1500)
+            }
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalphone: true,
+                })
+              },1500)
+            }
+          })
+        }
+      }
+    })
+  },
+  //身份证
+  onHiddenmodalnum: function () {
     this.setData({
       hiddenmodalnum: !this.data.hiddenmodalnum
     })
   },
-  cancels: function () {
+  cancelHiddenmodalnum: function () {
     this.setData({
       hiddenmodalnum: true
     });
   },
  //确认
- numblur: function (e) {
+  textHiddenmodalnum: function (e) {
     this.setData({
-      number: e.detail.value
+      num: e.detail.value
     })
   },
-  confirms: function () {
-    let number = this.data.number;
-    // console.log(number);
-    this.setData({
-      hiddenmodalnum: true,
-      numbered:number
+  confirmHiddenmodalnum: function () {
+    var that = this
+    wx.request({
+      url: 'http://49.234.64.182:86/index.php/applet/FALogin/onNum',
+      // url: 'http://tp6.com/index.php/applet/FALogin/onNum', 
+      data: {
+        num:this.data.num,
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'success',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalnum: true,
+                 ["FAUser.d_IDnum"]:that.data.num
+                })
+              },1500)
+            }
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalnum: true,
+                })
+              },1500)
+            }
+          })
+        }
+      }
     })
   },
-  //性别
-  bindsex: function () {
+  //驾驶证号
+  onHiddenmodaldriving: function () {
     this.setData({
-      hiddenmodalsex: !this.data.hiddenmodalsex
+      hiddenmodaldriving: !this.data.hiddenmodaldriving
     })
   },
-  cancelsd: function () {
+  cancelHiddenmodaldriving: function () {
     this.setData({
-      hiddenmodalsex: true
+      hiddenmodaldriving: true
     });
   },
  //确认
- sexblur: function (e) {
+ textHiddenmodaldriving: function (e) {
     this.setData({
-      sex: e.detail.value
+      driving: e.detail.value
     })
   },
-  confirmsd: function () {
-    let sex = this.data.sex;
-    // console.log(sex);
+  confirmHiddenmodaldriving: function () {
+    var that = this
+    wx.request({
+      url: 'http://49.234.64.182:86/index.php/applet/FALogin/onDriving',
+      // url: 'http://tp6.com/index.php/applet/FALogin/onDriving', 
+      data: {
+        driving:this.data.driving,
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'success',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodaldriving: true,
+                  ["FAUser.d_drive"]:that.data.driving
+                })
+              },1500)
+            }
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodaldriving: true,
+                })
+              },1500)
+            }
+          })
+        }
+      }
+    })
+  },
+  //驾龄
+  onHiddenmodalyears: function () {
     this.setData({
-      hiddenmodalsex: true,
-      textsex:sex
+      hiddenmodalyears: !this.data.hiddenmodalyears
+    })
+  },
+  cancelHiddenmodalyears: function () {
+    this.setData({
+      hiddenmodalyears: true
+    });
+  },
+ //确认
+ textHiddenmodalyears: function (e) {
+    this.setData({
+      years: e.detail.value
+    })
+  },
+  confirmHiddenmodalyears: function () {
+    var that = this
+    wx.request({
+      url: 'http://49.234.64.182:86/index.php/applet/FALogin/onYears',
+      // url: 'http://tp6.com/index.php/applet/FALogin/onYears', 
+      data: {
+        years:this.data.years,
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'success',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalyears: true,
+                  ["FAUser.d_driving"]:that.data.years
+                })
+              },1500)
+            }
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500,
+            success:()=>{
+              setTimeout(()=> {
+                that.setData({
+                  hiddenmodalyears: true,
+                })
+              },1500)
+            }
+          })
+        }
+      }
     })
   },
   //跳转登录页
