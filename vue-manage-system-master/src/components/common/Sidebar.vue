@@ -162,7 +162,7 @@ alert('1');
                 },
                 {
                     icon: 'el-icon-lx-global',
-                    index: 'i18n',
+                    index: '/type',
                     title: '车类型管理'
                 },
                 {

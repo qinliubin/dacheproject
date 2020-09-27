@@ -144,6 +144,12 @@ export default new Router({
                     component: () => import(/* webpackChunkName: "chart" */ '../components/page/OrderManagement/Order'),
                     meta: { title: '订单管理' }
                 },
+                {
+                    // 车辆类型管理管理
+                    path: '/type',
+                    component: () => import(/* webpackChunkName: "chart" */ '../components/page/typeManagement/Type.vue'),
+                    meta: { title: '车辆类型管理' }
+                },
             ]
         },
         {
