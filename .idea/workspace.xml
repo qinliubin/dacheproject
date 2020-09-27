@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020-09-25 国赐index" />
+    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020.9.27 20.02 更新司机端个人中心">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +44,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mini-project" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -52,6 +66,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -101,6 +116,8 @@
       <workItem from="1601185188058" duration="14384000" />
       <workItem from="1601200977437" duration="257000" />
       <workItem from="1601207912313" duration="23000" />
+      <workItem from="1601207936860" duration="487000" />
+      <workItem from="1601208629146" duration="916000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -165,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601201244109</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2020.9.27 20.02 更新司机端个人中心">
+      <created>1601208158572</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601208158572</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -216,17 +240,22 @@
     <MESSAGE value="2020-09-27 17：23 收费管理 覃柳彬" />
     <MESSAGE value="2020-09-25 柯智雄的用户管理" />
     <MESSAGE value="2020-09-27 18：07 柯智雄 新闻管理订单管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020-09-27 18：07 柯智雄 新闻管理订单管理" />
+    <MESSAGE value="2020.9.27 20.02 更新司机端个人中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.9.27 20.02 更新司机端个人中心" />
   </component>
   <component name="WindowStateProjectService">
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600496424882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1600496424882" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1601015369841">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1601208657753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601015369841" />
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601208657753" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1601208244933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601208244933" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601207934040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -241,15 +270,15 @@
     </state>
     <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601012735072" />
     <state x="270" y="57" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1601013615863" />
-    <state x="361" y="147" key="Vcs.Push.Dialog.v2" timestamp="1601013383368">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600954322946" />
-    <state x="361" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601013383368" />
-    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601015415555">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601208348360">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601015415555" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601208348360" />
+    <state x="361" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601013383368" />
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601212377978">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601212377978" />
     <state x="582" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1601013731930" />
     <state x="465" y="204" key="git4idea.merge.GitPullDialog" timestamp="1601013746072">
       <screen x="0" y="0" width="1536" height="834" />
