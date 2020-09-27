@@ -203,11 +203,14 @@
                     response =>{
                         console.log(response.data.data);//用户拥有的权限
                         console.log( response.data.data1);//所有权限
-                        this.oldlimit=response.data.data;
+                        console.log(response.data.data1.length);
+                        console.log(response.data.data.length);
                         for(var i=0;i<response.data.data1.length;i++){
+                            console.log(response.data.data1[i].au_id);
                             for(var j=0;j<response.data.data.length;j++){
+                                console.log(response.data.data[j].au_id);
                                 if(response.data.data1[i].au_id==response.data.data[j].au_id){
-                                    // console.log(response.data.data1[i].au_id);
+                                    console.log(response.data.data1[i].au_id);
                                     response.data.data1.splice(i,1);
                                 }
                             }
