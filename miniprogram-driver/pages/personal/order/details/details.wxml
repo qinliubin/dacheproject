@@ -1,0 +1,54 @@
+<!--pages/personal/order/details/details.wxml-->
+<view class="textaglin" >
+  <view class="origin">
+    <text>起点：{{datauser.o_initiaPosition}}</text>
+  </view>
+  <view style="padding-bottom: 20rpx;padding-left: 10rpx;">
+     <text>终点：{{datauser.o_destination}}</text> 
+  </view>
+  <view class="finish">
+    <text>支付完成，单单享低价</text>
+  </view>
+  <view class="userinfor">
+    <view class="userinfors">
+      <view class="userimg">
+        <image src="{{datauser.d_img}}"></image>
+        <text style="font-size:24rpx;">{{datauser.d_name}}师傅</text>
+      </view>
+      
+      <view class="infor">
+        <view>{{datauser.rm_plateNumber}}</view>
+        <view>{{datauser.rm_colour}}{{datauser.rm_type}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='select_box {{showder&&"select_box_hou"}}'>
+    <view class='select' catchtap='selectTap'>
+      <text class='select_text'>{{datauser.o_money}}元</text>
+      <image class='select_img {{show&&"select_img_rotate"}}' src='http://49.234.64.182:86/static/applet/img/zhankai.png'></image>   
+    </view>
+    <view class='option_box {{show&&"option_box_on"}}' >
+      <view class='option' style='{{index==selectData.length-1&&"border:0;padding-bottom: 15rpx;"}}' wx:for='{{selectData}}'>
+        <view style='{{index==selectData.length-1&&"padding-top: 15rpx;"}}'>
+          <view>{{item.text1}}</view>
+          <view style="font-size: 24rpx;padding-top:15rpx;color: #a8a8a8;">{{item.text2}}</view>
+        </view>
+        <view class="monery">{{item.money}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='evalu {{show&&"evalu_box"}}' bindtap="startSetInter">
+    <view style="padding-bottom: 20rpx;">您的评价</view>
+    <block wx:for="{{one_2}}" wx:key="index">
+      <image class="star_img" catchtap='in_xin' id='{{index+1}}' data-in='use_sc2' src='http://49.234.64.182:86/static/applet/img/pingf.png'></image>
+    </block>
+    <block wx:for="{{two_2}}" wx:key="index">
+      <image class="star_img" catchtap='in_xin' id='{{index+1}}' data-in='use_sc' src='http://49.234.64.182:86/static/applet/img/pingfen.png'></image>
+    </block>
+  </view>
+
+   
+
+    
+</view>
+

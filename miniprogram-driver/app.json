@@ -1,12 +1,14 @@
 {
   "pages":[
+    "pages/personal/userinfor/userinfor",
+    "pages/personal/personal",
     "pages/home/home",
     "pages/register/register",
     "pages/login/login",
-    "pages/information/information",
-    "pages/PersonalCenter/PersonalCenter",
     "pages/activityCenter/activityCenter",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/personal/order/order",
+    "pages/personal/order/details/details"
   ],
   "window":{
     "backgroundTextStyle":"light",
