@@ -19,177 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020-09-25 所有项目">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/app.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/login/login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/login/login.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/login/login.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/logs/logs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/logs/logs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/logs/logs.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/logs/logs.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/details/details.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/order/order.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/personal.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/personal/userinfor/userinfor.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/pages/rider/rider.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/sitemap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/utils/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/admin/controller/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/admin/controller/Passenger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/admin/model/Driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/admin/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/admin/route/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/aliyun.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/Aliyun.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/FALogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/Personal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/controller/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Activity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Advertising.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Billing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Cartype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Chat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Evaluate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/model/Vehicle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/applet/router/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/home/controller/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/home/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/home/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/home/route/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/controller/DbTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/controller/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/controller/ModelTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/model/Swiper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/route/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/enroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/login/enroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/login/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/login/userinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/index/view/login/userlist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/app/middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/captcha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/filesystem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/trace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/extend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/holle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/static/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/weixin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/public/wx.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/route/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/sdk.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/think" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/view/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp6/view/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/README_EN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/public/table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/screenshots/wms1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/screenshots/wms2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/screenshots/wms3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/color-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/icon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/theme-green/color-green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/theme-green/fonts/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/theme-green/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/css/theme-green/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/img/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/img/login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Tags.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/bus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/directives.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/403.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/404.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/BaseCharts.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/BaseForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/BaseTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Donate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/DragDialog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/DragList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/I18n.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Icon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Markdown.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Permission.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Tabs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/Upload.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/VueEditor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/utils/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/utils/validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/vue.config.js" afterDir="false" />
+    <list default="true" id="3119d921-7255-4da2-a295-013ecb0b2428" name="Default Changelist" comment="2020-09-25 国赐index">
+      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/NewsManagement/news.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/page/OrderManagement/Order.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram-driver/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram-driver/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-manage-system-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system-master/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,63 +46,75 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/chargesManagement/Charges.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3477">
-              <caret line="183" column="21" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
+            <state relative-caret-position="4028">
+              <caret line="212" column="32" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/authority.php">
+        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/BaseForm.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="304">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/charges.php">
+        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/Employee.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="5054">
+              <caret line="267" column="14" selection-start-line="245" selection-start-column="12" selection-end-line="267" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/roleAU.php">
+        <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/ChargesManagement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/RoleManagement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="589">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
               <folding>
-                <element signature="e#55#81#0#PHP" expanded="true" />
+                <element signature="e#62#88#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/userManagement/DriverManagement.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285" />
+            <state relative-caret-position="2470">
+              <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="31" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/advManagement/AdvManagement.vue">
+        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4161">
-              <caret line="219" selection-start-line="219" selection-end-line="219" />
+            <state relative-caret-position="2052">
+              <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/NewsManagement/PressReleases.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2223">
+              <caret line="121" selection-start-line="121" selection-end-line="127" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -297,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue" />
-        <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/page/chargesManagement/Charges.vue" />
         <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/page/advManagement/AdvManagement.vue" />
         <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/page/advManagement/PutAdv.vue" />
         <option value="$PROJECT_DIR$/tp6/app/admin/model/authority.php" />
@@ -306,8 +154,12 @@
         <option value="$PROJECT_DIR$/tp6/app/admin/model/roleAU.php" />
         <option value="$PROJECT_DIR$/tp6/app/admin/controller/RoleManagement.php" />
         <option value="$PROJECT_DIR$/tp6/app/admin/controller/Employee.php" />
+        <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/RoleManagement.vue" />
+        <option value="$PROJECT_DIR$/tp6/app/admin/model/Dictionary.php" />
+        <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/page/chargesManagement/Charges.vue" />
         <option value="$PROJECT_DIR$/tp6/app/admin/controller/ChargesManagement.php" />
         <option value="$PROJECT_DIR$/vue-manage-system-master/src/router/index.js" />
+        <option value="$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue" />
       </list>
     </option>
   </component>
@@ -334,6 +186,32 @@
             <path>
               <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
+              <item name="tp6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
+              <item name="tp6" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
+              <item name="tp6" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
+              <item name="tp6" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
               <item name="vue-manage-system-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -356,40 +234,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-manage-system-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="advManagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-manage-system-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="chargesManagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-manage-system-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="systemManagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dacheproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dacheproject" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-manage-system-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,6 +260,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -452,6 +297,16 @@
       <workItem from="1601020618576" duration="1296000" />
       <workItem from="1601022456635" duration="523000" />
       <workItem from="1601023575133" duration="456000" />
+      <workItem from="1601024509154" duration="2767000" />
+      <workItem from="1601027415999" duration="45000" />
+      <workItem from="1601027821283" duration="1232000" />
+      <workItem from="1601029690785" duration="355000" />
+      <workItem from="1601061526592" duration="2156000" />
+      <workItem from="1601102072421" duration="943000" />
+      <workItem from="1601103943333" duration="387000" />
+      <workItem from="1601104831073" duration="2485000" />
+      <workItem from="1601185188058" duration="14384000" />
+      <workItem from="1601200977437" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="2020/09/18 15:33 newProject QLB">
       <created>1600414466166</created>
@@ -467,16 +322,75 @@
       <option name="project" value="LOCAL" />
       <updated>1600954317132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020-09-25 所有项目">
+      <created>1601026438767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026438767</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2020-09-25 所有项目前台">
+      <created>1601027134400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601027134400</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2020-09-25 所有项目司机小程序">
+      <created>1601028262019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601028262019</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2020-09-25 国赐index">
+      <created>1601029897295</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601029897296</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2020-09-27 17：23 收费管理 覃柳彬">
+      <created>1601198686494</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601198686494</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2020-09-25 柯智雄的用户管理">
+      <created>1601198995454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601198995454</updated>
+    </task>
+    <task id="LOCAL-00009" summary="2020-09-27 18：07 柯智雄 新闻管理订单管理">
+      <created>1601201244108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601201244109</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5879000" />
+    <option name="totallyTimeSpent" value="30890000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26675603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26206434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -485,12 +399,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.42761394" weight="0.68696886" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4966488" weight="0.33002833" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5723861" side_tool="true" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.42761394" weight="0.09206799" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49597856" visible="true" weight="0.055240795" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50402147" side_tool="true" weight="0.33002833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -499,7 +413,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -544,7 +458,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/09/18 15:33 newProject QLB" />
     <MESSAGE value="2020.9.24.21.31  林杰  更新司机端" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.9.24.21.31  林杰  更新司机端" />
+    <MESSAGE value="2020-09-25 所有项目" />
+    <MESSAGE value="2020-09-25 所有项目前台" />
+    <MESSAGE value="2020-09-25 所有项目司机小程序" />
+    <MESSAGE value="2020-09-25 国赐index" />
+    <MESSAGE value="2020-09-27 17：23 收费管理 覃柳彬" />
+    <MESSAGE value="2020-09-25 柯智雄的用户管理" />
+    <MESSAGE value="2020-09-27 18：07 柯智雄 新闻管理订单管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-09-27 18：07 柯智雄 新闻管理订单管理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="610" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600496424882">
@@ -585,35 +506,12 @@
     <state x="465" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1601013746072" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/Role.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/Employee.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="345" column="31" lean-forward="true" selection-start-line="345" selection-start-column="31" selection-end-line="345" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/RoleManagement.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.json" />
-    <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.wxml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,44 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/ChargesManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#62#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/Employee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#55#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/chargesManagement/Charges.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3477">
-          <caret line="183" column="21" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/authority.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/charges.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -677,10 +541,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/charges.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/RoleManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="49" column="85" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="85" />
+          <folding>
+            <element signature="e#55#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/RoleManagement.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4066">
+          <caret line="214" column="33" selection-start-line="214" selection-start-column="33" selection-end-line="214" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/model/Dictionary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini-project/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/advManagement/AdvManagement.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4161">
           <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/Employee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#55#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/chargesManagement/Charges.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4028">
+          <caret line="212" column="32" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/BaseForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/systemManagement/Employee.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5054">
+          <caret line="267" column="14" selection-start-line="245" selection-start-column="12" selection-end-line="267" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/ChargesManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+          <folding>
+            <element signature="e#62#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/userManagement/DriverManagement.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2470">
+          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/common/Sidebar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2223">
+          <caret line="121" selection-start-line="121" selection-end-line="127" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -695,20 +674,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp6/app/admin/controller/RoleManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="e#55#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vue-manage-system-master/src/components/page/NewsManagement/PressReleases.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

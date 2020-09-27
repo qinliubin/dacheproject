@@ -1,0 +1,342 @@
+p
+{
+    display: block;
+
+    margin: 0;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
+#indexTop
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    /*background-image: url(../img/030bd.gif);*/
+}
+#topLeft
+{
+    line-height: 50px;
+
+    position: relative;
+
+    float: left;
+
+    width: 300px;
+    height: 50px;
+
+    /*color: white;*/
+}
+#topLeft > span
+{
+    font-size: 17px;
+
+    position: absolute;
+    z-index: 1;
+    left: 54px;
+    margin-left: 5px;
+}
+#log1
+{
+    position: relative;
+    z-index: 1;
+
+    width: 48px;
+    height: 35.25px;
+}
+#log2
+{
+    position: absolute;
+    top: -6.5px;
+    left: 14px;
+}
+#topRight
+{
+    font-size: 14px;
+    line-height: 50px;
+
+    float: right;
+
+    width: 235px;
+    height: 50px;
+
+    /*color: white;*/
+}
+.span
+{
+    height: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+    
+}
+.cursor{
+    cursor:pointer;
+}
+.log
+{
+    width: 20px;
+    height: 20px;
+}
+#indexBot{
+    margin-top: 55px;
+}
+#indexLeft{
+
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+}
+#indexRight{
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    border: 1px solid #66CCFF;
+    border-radius: 12.5px;
+    /*text-align: center;*/
+    box-shadow: darkgrey 10px 10px 50px 2px ;
+}
+
+/*角色管理*/
+#RoleManagement{
+    display: none;
+}
+/*员工管理*/
+#Personne{
+    display: none;
+}
+/*用户管理*/
+#Users{
+    display: none;
+}
+/*商品录用*/
+#GoodsEmployed{
+    display: none;
+}
+/*商品信息*/
+#Blurb{
+    display: none;
+}
+/*未支付*/
+#nonPayment{
+    display: none;
+}
+/*已支付*/
+#paid{
+    display: none;
+}
+/*客服*/
+#service{
+    display: none;
+}
+/*报表*/
+#statistics{
+    display: none;
+}
+/*日志*/
+#journal{
+    display: none;
+}
+
+.li1{
+    text-align: center;
+}
+.li1>span{
+    margin-right: 5px;
+}
+/*.div1{
+    float: left;
+}*/
+.span1{
+    margin-right: 60px;
+}
+.goodsImg{
+    width: 100px;
+    height: 100px;
+}
+#goodPage{
+    text-align: center;
+}
+#goodPage>a{
+    margin:0 3px;
+}
+.btn-bo{
+    border: 0;
+}
+th,td{
+    text-align: center;
+    vertical-align:middle;
+}
+.table td{
+    text-align: center;
+    vertical-align:middle !important;
+}
+td>img{
+    width: 60px;
+    height: 60px;
+}
+.blue{
+    color: #66CCFF;
+}
+.Blue{
+    background-color: #66CCFF;
+}
+.yellow{
+    color: #ffa500;
+}
+.Yellow{
+    background-color: #ffa500;
+}
+.gray{
+    color: #808080;
+}
+.Gray{
+    background-color: #808080;
+}
+.wht{
+    color: #ffffff;
+}
+.Wht{
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+.show-grid [class^=col-]{
+    background-color: #eee;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+}
+.table-hover>tbody>tr:hover {
+    background-color:  #808080;
+    cursor: pointer;
+}
+.table-striped{
+    background-color:  #66CCFF;
+}
+.panel-default>.panel-heading{
+    background-color:  #66CCFF;
+
+}
+.margin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.se{
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+#preview{
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/5555.jpg);
+    position:relative;
+    left:50%;
+    top:50%;
+    margin-top:50px;
+    margin-left:-60px;
+}
+#preview img{
+    width: 100%;
+    height: 100%;
+}
+#preview2{
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/5555.jpg);
+    position:relative;
+    left:50%;
+    top:50%;
+    margin-top: 11px;
+    margin-left: -25px;
+    margin-bottom: 33px;
+}
+#preview2 img{
+    width: 100%;
+    height: 100%;
+}
+.marginLeft{
+    margin-left: 15px;
+}
+.userImg{
+    width: 60px;
+    height: 60px;
+}
+.floatLeft{
+    float: left;
+}
+.line34{
+    line-height: 34px;
+}
+.page{
+    text-align: center;
+}
+.page>a{
+    margin:0 3px;
+}
+.size18{
+    font-size: 18px;
+}
+.word{
+    height: 500px;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+
+
+#datatable {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+/*td,th {
+    border: 1px solid #ccc;
+    padding: 4px 20px;
+}*/
+.serviceChat{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    border:1px solid rgb(102,204,255);
+    border-radius: 25px;
+    box-shadow: darkgrey 1px 1px 10px 0.2px ;
+}
+.serviceChat1{
+    margin: 0 auto;
+    height: 320px;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+.serviceChat2{
+    padding-top: 20px;
+    height: 100px;
+}
+.tright{
+    text-align: right !important;
+}

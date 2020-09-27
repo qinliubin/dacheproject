@@ -1,0 +1,53 @@
+#body{
+	background: url(../img/qqq.jpg);
+	baibackground-size:cover;
+}
+#loginbox{
+	width: 100%;
+	position: absolute;
+	margin-top:20%;
+
+	color: rgb(128,128,128);
+	background-color: rgba(102,204,255,0.8);
+	padding: 25px;
+    border: 1px solid #66CCFF;
+    border-radius: 12.5px;
+    box-shadow: darkgrey 10px 10px 50px 2px ;
+	/*float: left;*/
+	/*text-align: center;*/
+}
+.paddingTop10{
+	padding-top: 10px;
+}
+.txtEM{
+	height: 64px;
+	line-height: 32px;
+    text-align: center;
+}
+.center{
+	text-align: center;
+}
+.blue{
+    color: #66CCFF;
+}
+.Blue{
+    background-color: #66CCFF;
+}
+.yellow{
+    color: #ffa500;
+}
+.Yellow{
+    background-color: #ffa500;
+}
+.gray{
+    color: #808080;
+}
+.Gray{
+    background-color: #808080;
+}
+.marginRight25{
+	margin-right: 25px;
+}
+.padding0{
+	padding: 0 !important;
+}
