@@ -21,8 +21,8 @@ Page({
     } else {
       var that = this;
       wx.request({
-        // url: 'http://49.234.64.182:86/index.php/applet/FALogin/onLoadphone',
-        url: 'http://tp6.com/index.php/applet/FALogin/onLoadphone', 
+        url: 'http://49.234.64.182:86/index.php/applet/FALogin/onLoadphone',
+        // url: 'http://tp6.com/index.php/applet/FALogin/onLoadphone', 
         data: {
           phone:value
         },
@@ -69,8 +69,8 @@ Page({
       })
     }else(
       wx.request({
-        // url: 'http://49.234.64.182:86/index.php/applet/FALogin/modifiedData',
-        url: 'http://tp6.com/index.php/applet/FALogin/modifiedData', 
+        url: 'http://49.234.64.182:86/index.php/applet/FALogin/modifiedData',
+        // url: 'http://tp6.com/index.php/applet/FALogin/modifiedData', 
         data: {
           phone:wx.getStorageSync('FAUserAcc'),
           IDnum:this.data.IDnum,
@@ -102,7 +102,7 @@ Page({
 //个人中心
   onPersonalCenter:function(){
     wx.navigateTo({
-      url: '/pages/PersonalCenter/PersonalCenter',
+      url: '/pages/personal/personal',
     })
   },
   //活动中心
