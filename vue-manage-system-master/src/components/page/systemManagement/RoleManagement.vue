@@ -172,6 +172,7 @@
                 },
                 alllimit: [],
                 nowlimit: [],
+                nolimit:[]
             };
         },
         created() {
@@ -186,7 +187,7 @@
                 console.log("111");
                 this.$axios.get('admin/allRole').then(
                     response =>{
-                        console.log(this.info = response.data)
+                        console.log(response.data)
                        this.tableData=response.data.data.slice((this.query.pageIndex-1)*this.query.pageSize,this.query.pageIndex*this.query.pageSize);
                         this.pageTotal=response.data.count
                     }
@@ -201,24 +202,9 @@
                     }
                 ).then(
                     response =>{
-                        console.log(response.data.data);//用户拥有的权限
-                        console.log( response.data.data1);//所有权限
-                        console.log(response.data.data1.length);
-                        console.log(response.data.data.length);
-                        for(var i=0;i<response.data.data1.length;i++){
-                            console.log(response.data.data1[i].au_id);
-                            for(var j=0;j<response.data.data.length;j++){
-                                console.log(response.data.data[j].au_id);
-                                if(response.data.data1[i].au_id==response.data.data[j].au_id){
-                                    console.log(response.data.data1[i].au_id);
-                                    response.data.data1.splice(i,1);
-                                }
-                            }
-                        }
+                        console.log(response.data);
                         this.alllimit=response.data.data1;
                         this.nowlimit=response.data.data;
-                        console.log(this.alllimit);//用户没有的权限
-                        console.log(this.nowlimit);//所有权限
                     }
                 )
             },

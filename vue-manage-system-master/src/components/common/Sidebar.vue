@@ -142,7 +142,7 @@ alert('1');
                 },
                 {
                     icon: 'el-icon-pie-chart',
-                    index: '/table',
+                    index: '/order',
                     title: '订单管理'
                 },
                 {
@@ -151,12 +151,12 @@ alert('1');
                     title: '活动管理',
                     subs: [
                         {
-                            index: 'drag',
-                            title: '拖拽列表'
+                            index: '/putActivity',
+                            title: '活动发布'
                         },
                         {
-                            index: 'dialog',
-                            title: '拖拽弹框'
+                            index: '/Activity',
+                            title: '活动管理'
                         }
                     ]
                 },

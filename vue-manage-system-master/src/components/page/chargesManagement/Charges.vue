@@ -49,6 +49,7 @@
                 </el-select>
 <!--                <el-input v-model="query.name" placeholder="用户名" class="handle-input mr10"></el-input>-->
                 <el-button type="primary" icon="el-icon-search" @click="all">查看全部</el-button>
+                <el-button type="primary" class="handle-del mr10" @click="AddRule">添加计费规则</el-button>
             </div>
             <el-table
                     :data="tableData"
@@ -67,7 +68,7 @@
                 </el-table-column>
                 <el-table-column prop="bi_fastigium" label="高峰时段" align="center">
                 </el-table-column>
-                <el-table-column prop="bi_startKilometre" label="起步公里" align="center">
+                <el-table-column prop="bi_startKilometre" label="起步公里（公里）" align="center">
                 </el-table-column>
                 <el-table-column prop="bi_flag" label="起步价" align="center">
                     <template slot-scope="scope">￥{{scope.row.bi_flag}}</template>
@@ -122,6 +123,66 @@
                 <el-button type="primary" @click="saveEdit">确 定</el-button>
             </span>
         </el-dialog>
+
+        <!-- 增加计费规则弹出框 -->
+        <el-dialog title="编辑" :visible.sync="addnew" width="30%">
+            <el-form :model="Add" :rules="Add.rules" ref="add" label-width="70px">
+                <el-form-item label="车辆类型" prop="di_id">
+                    <el-select v-model="Add.di_id" class="handle-select mr10">
+                        <el-option
+                                v-for="item in optionsCar"
+                                :key="item.di_id"
+                                :label="item.di_name"
+                                :value="item.di_id">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="车型" prop="bi_type">
+                    <el-select v-model="Add.bi_type" class="handle-select mr10">
+                        <el-option
+                                v-for="item in optionsType"
+                                :key="item.bi_id"
+                                :label="item.bi_type"
+                                :value="item.bi_type">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="天气" prop="bi_weather">
+                    <el-select v-model="Add.bi_weather" class="handle-select mr10">
+                        <el-option
+                                v-for="item in optionsWeather"
+                                :key="item.bi_id"
+                                :label="item.bi_weather"
+                                :value="item.bi_weather">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="高峰时段" prop="bi_fastigium">
+                    <el-select v-model="Add.bi_fastigium" class="handle-select mr10">
+                        <el-option
+                                v-for="item in optionsGaofeng"
+                                :key="item.bi_id"
+                                :label="item.bi_fastigium"
+                                :value="item.bi_fastigium">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="起步公里" prop="bi_startKilometre">
+                    <el-input v-model.number="Add.bi_startKilometre">
+                    </el-input>
+                </el-form-item>
+                <el-form-item label="起步价（元）" prop="bi_flag">
+                    <el-input v-model.number="Add.bi_flag"></el-input>
+                </el-form-item>
+                <el-form-item label="超公里数单价（元）" prop="bi_money">
+                    <el-input v-model.number="Add.bi_money"></el-input>
+                </el-form-item>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="addnew = false">取 消</el-button>
+                <el-button type="primary" @click="saveAdd()">确 定</el-button>
+            </span>
+        </el-dialog>
     </div>
 </template>
 
@@ -142,6 +203,7 @@
                 multipleSelection: [],
                 delList: [],
                 editVisible: false,
+                addnew:false,
                 pageTotal: 0,
                 form: {},
                 idx: -1,
@@ -162,6 +224,27 @@
                 optionsWeather:[],
                 selectvalueGaofeng:'',
                 optionsGaofeng:[],
+                Add:{
+                    bi_flag:'',
+                    bi_money:'',
+                    bi_weather:'',
+                    bi_fastigium:'',
+                    di_id:'',
+                    bi_startKilometre:'',
+                    bi_type:'',
+                    rules:{
+                        bi_weather:[{ required: true, message: '不能为空'}],
+                        bi_fastigium:[{ required: true, message: '不能为空'}],
+                        di_id:[{ required: true, message: '不能为空'}],
+                        bi_type:[{ required: true, message: '不能为空'}],
+                        bi_flag:[{ required: true, message: '价格不能为空'},
+                            { type: 'number', message: '价格必须为数字值'}],
+                        bi_money:[{required: true, message: '价格不能为空'},
+                            { type: 'number', message: '价格必须为数字值'}],
+                        bi_startKilometre:[{required: true, message: '起步公里不能为空'},
+                            { type: 'number', message: '价格必须为数字值'}],
+                    },
+                },
             };
         },
         created() {
@@ -289,7 +372,47 @@
                 this.selectvalueWeather='';
                 this.selectvalueGaofeng='';
                 this.getData();
-            }
+            },
+            // 点击添加计费规则
+            AddRule(){
+                this.addnew=true;
+            },
+            //保存添加
+            saveAdd(){
+                this.$refs.add.validate(valid => {
+                    if (valid) {
+                        console.log(this.Add);
+                        // console.log(this.param.username);
+                        // console.log(this.param.password);
+                        this.$axios.post('admin/ChargesManagement/Add',
+                            {
+                                bi_fastigium: this.Add.bi_fastigium,
+                                bi_flag: this.Add.bi_flag,
+                                bi_money: this.Add.bi_money,
+                                bi_startKilometre: this.Add.bi_startKilometre,
+                                bi_type: this.Add.bi_type,
+                                bi_weather:this.Add.bi_weather,
+                                di_id:this.Add.di_id,
+                            }
+                        ).then(
+                            response =>{
+                                console.log(this.info = response.data)
+                                if (response.data.code=='10001'){
+                                    this.$message.success(response.data.msg);
+                                    this.addnew = false;
+                                    this.getData();
+                                }else {
+                                    this.$message.error('规则重复存在');
+                                }
+                            }
+                        )
+                    } else {
+                        this.$message.error('输入不能为空');
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
         }
     };
 </script>

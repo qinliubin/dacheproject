@@ -42,7 +42,7 @@ class ChargesManagement{
     //删除某一条计费规则
     public function del(charges $charges){
         $bi_id=Request::param('bi_id');
-        $res=$charges->Db()->delete($bi_id);
+        $res=$charges->Db()->where('bi_id',$bi_id)->delete();
         if ($res){
             return json(array('code'=>'40001','msg'=>'删除成功'));
         }
@@ -129,6 +129,24 @@ class ChargesManagement{
 
         }
         $data=array("count"=>$count,'currage'=>1,"data"=>$res);
+        return json($data);
+    }
+    //添加规则
+    public function add(charges $charges){
+        $bi_flag=Request::param('bi_flag');
+        $bi_money=Request::param('bi_money');
+        $bi_weather=Request::param('bi_weather');
+        $bi_startKilometre=Request::param('bi_startKilometre');
+        $bi_fastigium=Request::param('bi_fastigium');
+        $di_id=Request::param('di_id');
+        $bi_type=Request::param('bi_type');
+        $res1=$charges->db()->where('bi_weather',$bi_weather)->where('bi_fastigium',$bi_fastigium)->where('di_id',$di_id)->where('bi_type',$bi_type)->find();
+        if($res1!=null){
+            $data=array('code'=>'10002','msg'=>'账号存在');
+        }else{
+            $res2=$charges->db()->insert(['bi_flag'=>$bi_flag,'bi_money'=>$bi_money,'bi_weather'=>$bi_weather,'bi_startKilometre'=>$bi_startKilometre,'bi_fastigium'=>$bi_fastigium,'di_id'=>$di_id,'bi_type'=>$bi_type]);
+            $data=array('code'=>'10001','msg'=>'添加成功');
+        }
         return json($data);
     }
 }

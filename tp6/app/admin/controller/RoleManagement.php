@@ -44,9 +44,18 @@ class RoleManagement{
 //    获得所有权限
     public function getnowlimt(roleAU $roleAU){
         //所有权限
-        $authority=new authority();
-        $res=$authority->db()->select();
         $r_id=Request::param('r_id');
+        $authority=new authority();
+//        $res=$authority->db()->select();
+        $data1=Db::table('DD_roleAU')
+            ->where('r_id','=','2')
+            ->column('au_id');
+
+//        dump($data1);
+        $res=Db::table('DD_authority')
+            ->where('au_id','not in',$data1)
+            ->select();
+//        dump($res);
         $res1=$roleAU->db()->leftJoin('DD_authority au','DD_roleAU.au_id = au.au_id')->where('r_id',$r_id)->select();
         $data=array("data"=>$res1,"data1"=>$res);
         return json($data);
@@ -71,5 +80,6 @@ class RoleManagement{
         if ($res){
             return json(array('code'=>'50001',"count"=>$count,'data'=>$res));
         }
+
     }
 }

@@ -181,7 +181,7 @@
             // 分页导航
             handlePageChange(val) {
                 this.$set(this.query, 'pageIndex', val);
-                this.getData();
+                this.getData('admin/Order/Order');
             }
         }
     };

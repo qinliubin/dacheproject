@@ -140,7 +140,7 @@ export default new Router({
                 },
                 {
                     // 订单管理
-                    path: '/charts',
+                    path: '/order',
                     component: () => import(/* webpackChunkName: "chart" */ '../components/page/OrderManagement/Order'),
                     meta: { title: '订单管理' }
                 },
@@ -149,6 +149,18 @@ export default new Router({
                     path: '/type',
                     component: () => import(/* webpackChunkName: "chart" */ '../components/page/typeManagement/Type.vue'),
                     meta: { title: '车辆类型管理' }
+                },
+                {
+                    // 活动发布
+                    path: '/putActivity',
+                    component: () => import(/* webpackChunkName: "upload" */ '../components/page/activityManagement/PutActivity.vue'),
+                    meta: { title: '发布活动' }
+                },
+                {
+                    // 活动管理
+                    path: '/Activity',
+                    component: () => import(/* webpackChunkName: "upload" */ '../components/page/activityManagement/Activity.vue'),
+                    meta: { title: '发布活动' }
                 },
             ]
         },

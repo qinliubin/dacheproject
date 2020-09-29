@@ -60,6 +60,7 @@ public function allRole(Role $role){
         $data=array("count"=>$count,'currage'=>1,"data"=>$res);
 //        dump($data);
         return json($data);
+//        return 11111;
 //    }
 }
 //增加角色时获得除超级管理员以外的角色
