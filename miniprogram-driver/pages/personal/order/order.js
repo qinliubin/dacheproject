@@ -7,9 +7,11 @@ Page({
   */
   data: {
   currtab: 0,
-  swipertab: [{ name: '已付款', index: 0 }, { name: '待付款', index: 1 }, { name: '已评价', index: 2 }],
+  swipertab: [{ name: '正进行', index: 0 }, { name: '待处理', index: 1 }, { name: '已结束', index: 2 }],
   },
-   
+  proceed:[],
+  dispose:[],
+  finish:[],
   /**
   * 生命周期函数--监听页面加载
   */
@@ -18,6 +20,48 @@ Page({
    this.setData({
     currtab:currtab
    })
+   var that = this
+    wx.request({
+      // url: 'http://49.234.64.182:86/index.php/applet/FALogin/onLoadOrder',
+      url: 'http://tp6.com/index.php/applet/FALogin/onLoadOrder', 
+      data: {
+        acc:wx.getStorageSync('FAUserAcc'),
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        if (res.data.code==1001) {
+          var proceed=res.data.data1;
+          var dispose=res.data.data2;
+          var finish=res.data.data3;
+          that.setData({
+            proceed:proceed,
+            dispose:dispose,
+            finish:finish
+          })
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500
+          })
+        }
+        var num1=that.data.proceed.length*170.5
+        var num2=that.data.dispose.length*170.5
+        var num3=that.data.finish.length*170.5
+        var arr = [num1,num2,num3,470];
+        var max =arr[0];
+        for(var i=1; i < arr.length; i++){
+          if(max < arr[i]){
+            max = arr[i];
+          }
+        }
+        that.setData({
+          deviceHeight:max
+        })
+      }
+    })
   },
   /**
   * 生命周期函数--监听页面初次渲染完成
@@ -55,40 +99,46 @@ Page({
   },
    
   tabChange: function (e) {
+    var num1=this.data.proceed.length*170.5;
+    var num2=this.data.dispose.length*170.5;
+    var num3=this.data.finish.length*170.5;
   this.setData({ currtab: e.detail.current })
-  this.orderShow()
+  this.orderShow(num1,num2,num3)
   },
    
-  orderShow: function () {
+  orderShow: function (num1,num2,num3) {
   let that = this
   switch (this.data.currtab) {
   case 0:
   that.alreadyShow()
+  that.setData({
+    deviceHeight:num1
+  })
   break
   case 1:
   that.waitPayShow()
+  that.setData({
+    deviceHeight:num2
+  })
   break
   case 2:
   that.lostShow()
+  that.setData({
+    deviceHeight:num3
+  })
   break
   }
   },
   alreadyShow: function(){
-  this.setData({
-  alreadyOrder: [{ name: "跃动体育运动俱乐部(圆明园店)", state: "交易成功", time: "2018-09-30 14:00-16:00", status: "已结束", url: "http://49.234.64.182:86/static/applet/img/3.jpg", money: "132" }, { name: "跃动体育运动俱乐部(圆明园店)", state: "交易成功", time: "2018-10-12 18:00-20:00", status: "未开始", url: "http://49.234.64.182:86/static/applet/img/3.jpg", money: "205" }]
-  })
+  
   },
    
   waitPayShow:function(){
-  this.setData({
-  waitPayOrder: [{ name: "跃动体育运动俱乐部(圆明园店)", state: "待付款", time: "2018-10-14 14:00-16:00", status: "未开始", url: "http://49.234.64.182:86/static/applet/img/3.jpg", money: "186" }],
-  })
+  
   },
    
   lostShow: function () {
-  this.setData({
-  lostOrder: [{ name: "跃动体育运动俱乐部(圆明园店)", state: "已取消", time: "2018-10-4 10:00-12:00", status: "未开始", url: "http://49.234.64.182:86/static/applet/img/3.jpg", money: "122" }],
-  })
+  
   },
    
    

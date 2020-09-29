@@ -4,6 +4,8 @@
 namespace app\applet\controller;
 
 use app\applet\model\Driver;
+use app\applet\model\Order;
+
 
 class FALogin
 {
@@ -154,5 +156,39 @@ class FALogin
         }else{
             echo json_encode(array('code'=>1002,'msg'=>'修改失败'));
         }
+    }
+    /*public function onLoadOrder(Driver $driver,Order $order){
+        $acc=$_GET['acc'];
+        $res=$driver&&$order->db()->where([
+            ["DD_driver.d_acc","=",$acc],
+            ["DD_driver.d_id","=","DD_order.d_id"],
+            ["DD_order.o_state","=","进行"]
+        ])->find();
+        echo $res;
+    }*/
+    public function onLoadOrder(Driver $driver,Order $order){
+        $acc=$_GET['acc'];
+        $data=$driver->db()->where([
+            ["d_acc","=",$acc]
+        ])->find();
+        $res1=$order->db()->where([
+            ["d_id","=",$data['d_id']],
+            ["o_state","=",'进行']
+        ])->select();
+        $res2=$order->db()->where([
+            ["d_id","=",$data['d_id']],
+            ["o_state","=",'处理']
+        ])->select();
+        $res3=$order->db()->where([
+            ["d_id","=",$data['d_id']],
+            ["o_state","=",'结束']
+        ])->select();
+//        dump($res1);
+        if ($res1||$res2||$res3){
+            echo json_encode(array('code'=>1001,'msg'=>'查询成功','data1'=>$res1,'data2'=>$res2,'data3'=>$res3));
+        }else{
+            echo json_encode(array('code'=>1002,'msg'=>'查询失败'));
+        }
+
     }
 }

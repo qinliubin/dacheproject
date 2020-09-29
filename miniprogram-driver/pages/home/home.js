@@ -1,3 +1,7 @@
+const app = getApp()
+var uploadImage = require('../../utils/uploadFile.js');
+var util = require('../../utils/util.js');
+
 Page({
  
   /**
@@ -10,6 +14,8 @@ Page({
     drive:'',
     driving:'',
     phone:'',
+    tempFilePaths1: '',
+    tempFilePaths2: ''
   },
   onLoad: function () {
     var value = wx.getStorageSync('FAUserAcc');
@@ -43,19 +49,141 @@ Page({
       })
     }
   },
-  IDnum: function (e) {
-    this.setData({
-      IDnum: e.detail.value
+  //身份证
+  IDnum: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 9, // 默认9
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        var nowTime = util.formatTime(new Date());
+
+        //支持多图上传
+        for (var i = 0; i < res.tempFilePaths.length; i++) {
+           //显示消息提示框
+           wx.showLoading({
+              title: '上传中' + (i + 1) + '/' + res.tempFilePaths.length,
+              mask: true
+           })
+
+           //上传图片
+           //你的域名下的/cbb文件下的/当前年月日文件下的/图片.png
+           //图片路径可自行修改
+           uploadImage(res.tempFilePaths[i], 'cbb/' + nowTime + '/',
+              function (result) {
+                wx.request({
+                  url: 'http://49.234.64.182:86/index.php/applet/IDcard/IDcard',
+                  // url: 'http://tp6.com/index.php/applet/IDcard/IDcard', 
+                  data: {
+                    img:result
+                  },
+                  header: {
+                    'content-type': 'application/json' // 默认值
+                  },
+                  success (res) {
+                    var str=typeof(res.data)=='string'
+                    if (str==true) {
+                      wx.showToast({
+                        title: '上传失败，请上传身份证！',
+                        icon: 'none',
+                        duration: 1500,
+                      })
+                    } else {
+                      that.setData({
+                        tempFilePaths1:tempFilePaths,
+                        IDnum:res.data.Data.FrontResult.IDNumber
+                      })
+                    }
+                  }
+                })
+                 wx.hideLoading();
+              }, function (result) {
+                wx.showToast({
+                  title: '上传失败，请上传身份证！',
+                  icon: 'none',
+                  duration: 1500,
+                })
+                 console.log("======上传失败======", result);
+                 wx.hideLoading()
+              }
+           )
+        }
+      }
     })
   },
+ 
   drive: function (e) {
-    this.setData({
-      drive: e.detail.value
-    })
-  },
-  driving: function (e) {
-    this.setData({
-      driving: e.detail.value
+    var that = this;
+    wx.chooseImage({
+      count: 9, // 默认9
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        var tempFilePaths = res.tempFilePaths;
+        var nowTime = util.formatTime(new Date());
+
+        //支持多图上传
+        for (var i = 0; i < res.tempFilePaths.length; i++) {
+           //显示消息提示框
+           wx.showLoading({
+              title: '上传中' + (i + 1) + '/' + res.tempFilePaths.length,
+              mask: true
+           })
+
+           //上传图片
+           //你的域名下的/cbb文件下的/当前年月日文件下的/图片.png
+           //图片路径可自行修改
+           uploadImage(res.tempFilePaths[i], 'cbb/' + nowTime + '/',
+              function (result) {
+                wx.request({
+                  url: 'http://49.234.64.182:86/index.php/applet/DrivingLicence/DrivingLicence',
+                  // url: 'http://tp6.com/index.php/applet/DrivingLicence/DrivingLicence', 
+                  data: {
+                    img:result
+                  },
+                  header: {
+                    'content-type': 'application/json' // 默认值
+                  },
+                  success (res) {
+                    var str=typeof(res.data)=='string'
+                    if (str==true) {
+                      wx.showToast({
+                        title: '上传失败，请上传驾驶证！',
+                        icon: 'none',
+                        duration: 1500,
+                      })
+                    } else {
+                      var stmp=res.data.Data.FaceResult.IssueDate
+                      var jyear=stmp.slice(0,4)
+                      var time = new Date();
+                      time.setTime(time.getTime());
+                      var year=time.getFullYear();
+                      var num=year-jyear;
+                      that.setData({
+                        tempFilePaths2:tempFilePaths,
+                        drive:res.data.Data.FaceResult.LicenseNumber,
+                        driving:num
+                      })
+                    }
+                  }
+                })
+                 wx.hideLoading();
+              }, function (result) {
+                wx.showToast({
+                  title: '上传失败，请上传驾驶证！',
+                  icon: 'none',
+                  duration: 1500,
+                })
+                 console.log("======上传失败======", result);
+                 wx.hideLoading()
+              }
+           )
+        }
+      }
     })
   },
   //资料提交
@@ -63,11 +191,17 @@ Page({
     var that=this;
     if(this.data.IDnum.length == 0||this.data.drive.length == 0||this.data.driving.length == 0){
       wx.showToast({
-        title: '请填写好资料！',
+        title: '请上传好资料！',
         icon: 'none',
         duration: 1500
       })
-    }else(
+    }else if (this.data.IDnum!=this.data.drive) {
+      wx.showToast({
+        title: '身份证与驾驶证不是同一个人！',
+        icon: 'none',
+        duration: 1500
+      })
+    } else (
       wx.request({
         url: 'http://49.234.64.182:86/index.php/applet/FALogin/modifiedData',
         // url: 'http://tp6.com/index.php/applet/FALogin/modifiedData', 

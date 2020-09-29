@@ -1,13 +1,13 @@
 {
   "pages":[
-    "pages/personal/personal",
     "pages/home/home",
+    "pages/personal/order/order",
+    "pages/personal/personal",
     "pages/personal/userinfor/userinfor",
     "pages/register/register",
     "pages/login/login",
     "pages/activityCenter/activityCenter",
     "pages/logs/logs",
-    "pages/personal/order/order",
     "pages/personal/order/details/details"
   ],
   "window":{

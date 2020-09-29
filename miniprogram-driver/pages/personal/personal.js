@@ -7,10 +7,9 @@ Page({
     username:'',
     touuurl:'',
     show:false,
-    noPay:'已付款',
-    noSend:'待付款',
-    sended:'已评价',
-    completed:'待评价',
+    noPay:'正进行',
+    noSend:'待处理',
+    sended:'已结束',
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   onLoad: function () {
